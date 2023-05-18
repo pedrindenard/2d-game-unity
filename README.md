@@ -7,7 +7,7 @@ This game is an "MMO", where the main character will have an inventory and healt
 ## Maps
 The game consists of 3 maps.
 * Black Forest
-* caves
+* Caves
 * Ice Mountains
 
 All maps fit together, giving continuity to the game. For each map, collectibles and weapons to pick up, as well as enemies and final boss, will be available.
