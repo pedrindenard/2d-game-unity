@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAnimation : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
     private Animator playerAnimator;
@@ -22,6 +22,8 @@ public class PlayerAnimation : MonoBehaviour
 
     public Vector3 playerDirection = Vector3.right; // Indicates which direction the character is facing
     public PlayerLookingState playerLookingState; // Indicates which direction the character is looking
+    public GameObject playerObjectInteraction; // Indicates which object the character is interacting
+
     public bool playerAttacking; // Indicates whether the character is performing an attack
     public bool playerInGround; // Indicates whether the character is stepping on any surface
 
@@ -59,6 +61,8 @@ public class PlayerAnimation : MonoBehaviour
 
         playerCollider();
         playerAnimations();
+
+        interactionAnimation();
     }
 
     // Called every time the player collides with another collider
@@ -113,12 +117,14 @@ public class PlayerAnimation : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collider) {
+    void OnTriggerEnter2D(Collider2D collider)
+    {
 
     }
 
-    void OnTriggerExit2D(Collider2D collider) {
-        
+    void OnTriggerExit2D(Collider2D collider)
+    {
+
     }
 
     void playerMovingStates()
@@ -169,7 +175,7 @@ public class PlayerAnimation : MonoBehaviour
 
     void attackAnimation()
     {
-        if (Input.GetButtonDown("Fire1") && vertical >= 0 && !playerAttacking)
+        if (Input.GetButtonDown("Fire1") && vertical >= 0 && !playerAttacking && playerObjectInteraction == null)
         {
             playerAnimator.SetTrigger("Attack");
         }
@@ -177,6 +183,14 @@ public class PlayerAnimation : MonoBehaviour
         if (playerAttacking && playerInGround)
         {
             horizontal = 0;
+        }
+    }
+
+    void interactionAnimation()
+    {
+        if (Input.GetButtonDown("Fire1") && vertical >= 0 && !playerAttacking && playerObjectInteraction != null)
+        {
+            playerObjectInteraction.SendMessage("interaction", SendMessageOptions.DontRequireReceiver);
         }
     }
 
@@ -206,7 +220,7 @@ public class PlayerAnimation : MonoBehaviour
 
         float scaleX = transform.localScale.x;
         scaleX *= -1; // Invert "scaleX" value
-        
+
         Vector3 scaleSettings = new Vector3(scaleX, transform.localScale.y, transform.localScale.z);
 
         transform.localScale = scaleSettings; // Set player looking direction
@@ -233,11 +247,17 @@ public class PlayerAnimation : MonoBehaviour
     {
         // Create invisible line ray for player interactions
         RaycastHit2D hit = Physics2D.Raycast(playerInteraction.position, playerDirection, 0.15F, interactionLayerMask);
+
+        // Show line in scene mode
         Debug.DrawRay(playerInteraction.position, playerDirection * 0.15F, Color.red);
 
         if (hit)
         {
-            print(hit.collider.gameObject.tag);
+            playerObjectInteraction = hit.collider.gameObject;
+        }
+        else
+        {
+            playerObjectInteraction = null;
         }
     }
 

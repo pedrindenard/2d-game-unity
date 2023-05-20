@@ -50,11 +50,11 @@ TagManager:
   - name: Foreground
     uniqueID: 1168887461
     locked: 0
-  - name: Alpha
-    uniqueID: 3852275001
-    locked: 0
   - name: Alpha 1
     uniqueID: 715557895
+    locked: 0
+  - name: Alpha
+    uniqueID: 3852275001
     locked: 0
   - name: Wall
     uniqueID: 1690945039
