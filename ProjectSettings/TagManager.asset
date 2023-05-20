@@ -10,6 +10,7 @@ TagManager:
   - Lever
   - Door
   - Steps
+  - Weapon
   layers:
   - Default
   - TransparentFX

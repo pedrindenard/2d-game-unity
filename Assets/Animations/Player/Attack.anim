@@ -21,17 +21,17 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -241877737, guid: 64efdcf14b1164b55bb0874f64221e04, type: 3}
-    - time: 0.2
+    - time: 0.125
       value: {fileID: -1328373215, guid: 64efdcf14b1164b55bb0874f64221e04, type: 3}
-    - time: 0.4
+    - time: 0.25
       value: {fileID: -1120930359, guid: 64efdcf14b1164b55bb0874f64221e04, type: 3}
-    - time: 0.6
+    - time: 0.375
       value: {fileID: -1120930359, guid: 64efdcf14b1164b55bb0874f64221e04, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 5
+  m_SampleRate: 8
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -55,7 +55,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.8
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -82,7 +82,28 @@ AnimationClip:
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
-  - time: 0.6
+  - time: 0
+    functionName: weaponControls
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.125
+    functionName: weaponControls
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 1
+    messageOptions: 0
+  - time: 0.25
+    functionName: weaponControls
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 2
+    messageOptions: 0
+  - time: 0.375
     functionName: playerAttackStates
     data: 
     objectReferenceParameter: {fileID: 0}

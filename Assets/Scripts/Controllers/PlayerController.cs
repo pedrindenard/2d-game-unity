@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public Vector3 playerDirection = Vector3.right; // Indicates which direction the character is facing
     public PlayerLookingState playerLookingState; // Indicates which direction the character is looking
     public GameObject playerObjectInteraction; // Indicates which object the character is interacting
+    public GameObject[] playerWeapons; // Array of weapons
 
     public bool playerAttacking; // Indicates whether the character is performing an attack
     public bool playerInGround; // Indicates whether the character is stepping on any surface
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
     {
         playerAnimator = GetComponent<Animator>();
         playerRigidBody = GetComponent<Rigidbody2D>();
+        weaponVisible(false);
     }
 
     // Called every 0.02 seconds (Player physics simulation)
@@ -231,6 +233,11 @@ public class PlayerController : MonoBehaviour
     {
         // For some reason Unity doesn't understand boolean values in animations functions, so we need to check int values instead
         playerAttacking = isAttacking != 0;
+
+        if (!playerAttacking)
+        {
+            playerWeapons[2].SetActive(false);
+        }
     }
 
     void playerVelocity()
@@ -261,4 +268,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void weaponVisible(bool visible)
+    {
+        foreach(GameObject gameObject in playerWeapons)
+        {
+            gameObject.SetActive(visible);
+        }
+    }
+
+    void weaponControls(int id)
+    {
+        weaponVisible(false);
+        playerWeapons[id].SetActive(true);
+    }
 }
