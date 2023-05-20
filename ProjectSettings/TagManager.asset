@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Chest
+  - Thorns
+  - Plate
+  - Lever
+  - Door
+  - Steps
   layers:
   - Default
   - TransparentFX
@@ -11,8 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - Interaction
   - 
   - 
   - 
@@ -38,21 +44,36 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: Background
+    uniqueID: 3932636377
     locked: 0
-  - name: Player
-    uniqueID: 500975343
+  - name: Foreground
+    uniqueID: 1168887461
+    locked: 0
+  - name: Alpha
+    uniqueID: 3852275001
+    locked: 0
+  - name: Alpha 1
+    uniqueID: 715557895
+    locked: 0
+  - name: Wall
+    uniqueID: 1690945039
+    locked: 0
+  - name: Collider
+    uniqueID: 1200021835
     locked: 0
   - name: Objects
     uniqueID: 2027616677
     locked: 0
-  - name: Ground
-    uniqueID: 1200021835
+  - name: Player
+    uniqueID: 500975343
     locked: 0
-  - name: Foreground
-    uniqueID: 1690945039
+  - name: Front of player
+    uniqueID: 2624014363
     locked: 0
-  - name: Background
-    uniqueID: 3852275001
+  - name: Grass
+    uniqueID: 2475069791
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
