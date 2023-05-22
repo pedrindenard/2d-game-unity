@@ -22,7 +22,7 @@ TagManager:
   - Interaction
   - Attack
   - Enemy
-  - 
+  - Player
   - 
   - 
   - 
@@ -63,8 +63,14 @@ TagManager:
   - name: Collider
     uniqueID: 1200021835
     locked: 0
+  - name: HP
+    uniqueID: 3541548049
+    locked: 0
   - name: Grass
     uniqueID: 2475069791
+    locked: 0
+  - name: HUD
+    uniqueID: 396236989
     locked: 0
   - name: Default
     uniqueID: 0
