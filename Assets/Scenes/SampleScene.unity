@@ -726,7 +726,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -744,7 +744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93686c75b2a4947d98cf0804e0b53582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponDamage: 5
+  maxWeaponDamage: 10
+  minWeaponDamage: 3
   weaponDamageType: 0
 --- !u!1 &61989281
 GameObject:
@@ -2329,6 +2330,7 @@ GameObject:
   - component: {fileID: 175400522}
   - component: {fileID: 175400521}
   - component: {fileID: 175400520}
+  - component: {fileID: 175400525}
   m_Layer: 9
   m_Name: Goblin (2)
   m_TagString: Untagged
@@ -2402,7 +2404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6444b96915141d8b2ffd0f83a522d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 100
+  enemyLife: 25
   enemyCurrentLife: 0
   enemyPercentageLife: 0
   enemyHPBarConfig: {fileID: 1820778641}
@@ -2499,6 +2501,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &175400525
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175400518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd19a6849ac8f49e088e8d09cac481d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &182164532
 GameObject:
   m_ObjectHideFlags: 0
@@ -3323,7 +3346,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.08, y: -0.08}
@@ -3341,7 +3364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93686c75b2a4947d98cf0804e0b53582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponDamage: 5
+  maxWeaponDamage: 10
+  minWeaponDamage: 3
   weaponDamageType: 0
 --- !u!1 &244490131
 GameObject:
@@ -3468,6 +3492,7 @@ GameObject:
   - component: {fileID: 250357501}
   - component: {fileID: 250357500}
   - component: {fileID: 250357499}
+  - component: {fileID: 250357504}
   m_Layer: 9
   m_Name: Goblin (3)
   m_TagString: Untagged
@@ -3541,7 +3566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6444b96915141d8b2ffd0f83a522d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 100
+  enemyLife: 25
   enemyCurrentLife: 0
   enemyPercentageLife: 0
   enemyHPBarConfig: {fileID: 1048114561}
@@ -3638,6 +3663,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &250357504
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250357497}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd19a6849ac8f49e088e8d09cac481d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &250561703
 GameObject:
   m_ObjectHideFlags: 0
@@ -5908,6 +5954,7 @@ GameObject:
   - component: {fileID: 378990008}
   - component: {fileID: 378990007}
   - component: {fileID: 378990006}
+  - component: {fileID: 378990011}
   m_Layer: 9
   m_Name: Goblin (6)
   m_TagString: Untagged
@@ -5981,7 +6028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6444b96915141d8b2ffd0f83a522d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 100
+  enemyLife: 25
   enemyCurrentLife: 0
   enemyPercentageLife: 0
   enemyHPBarConfig: {fileID: 1841044142}
@@ -6078,6 +6125,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &378990011
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378990004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd19a6849ac8f49e088e8d09cac481d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &381914411
 GameObject:
   m_ObjectHideFlags: 0
@@ -12701,6 +12769,7 @@ GameObject:
   - component: {fileID: 659571635}
   - component: {fileID: 659571634}
   - component: {fileID: 659571638}
+  - component: {fileID: 659571639}
   m_Layer: 9
   m_Name: Goblin
   m_TagString: Untagged
@@ -12758,7 +12827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6444b96915141d8b2ffd0f83a522d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 100
+  enemyLife: 25
   enemyCurrentLife: 0
   enemyPercentageLife: 0
   enemyHPBarConfig: {fileID: 1253918025}
@@ -12871,6 +12940,27 @@ CircleCollider2D:
   m_Offset: {x: 0.0120277405, y: -0.25}
   serializedVersion: 2
   m_Radius: 0.22485733
+--- !u!95 &659571639
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659571632}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd19a6849ac8f49e088e8d09cac481d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &660204799
 GameObject:
   m_ObjectHideFlags: 0
@@ -15682,6 +15772,7 @@ GameObject:
   - component: {fileID: 1126511690}
   - component: {fileID: 1126511689}
   - component: {fileID: 1126511688}
+  - component: {fileID: 1126511693}
   m_Layer: 9
   m_Name: Goblin (7)
   m_TagString: Untagged
@@ -15755,7 +15846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6444b96915141d8b2ffd0f83a522d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 100
+  enemyLife: 25
   enemyCurrentLife: 0
   enemyPercentageLife: 0
   enemyHPBarConfig: {fileID: 121089278}
@@ -15852,6 +15943,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1126511693
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126511686}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd19a6849ac8f49e088e8d09cac481d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1130312100
 GameObject:
   m_ObjectHideFlags: 0
@@ -20878,6 +20990,7 @@ GameObject:
   - component: {fileID: 1509158636}
   - component: {fileID: 1509158635}
   - component: {fileID: 1509158634}
+  - component: {fileID: 1509158639}
   m_Layer: 9
   m_Name: Goblin (1)
   m_TagString: Untagged
@@ -20951,7 +21064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6444b96915141d8b2ffd0f83a522d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 100
+  enemyLife: 25
   enemyCurrentLife: 0
   enemyPercentageLife: 0
   enemyHPBarConfig: {fileID: 1566161411}
@@ -21048,6 +21161,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1509158639
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509158632}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd19a6849ac8f49e088e8d09cac481d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1520989275
 GameObject:
   m_ObjectHideFlags: 0
@@ -24177,7 +24311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93686c75b2a4947d98cf0804e0b53582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponDamage: 5
+  maxWeaponDamage: 10
+  minWeaponDamage: 3
   weaponDamageType: 0
 --- !u!1 &1834006187
 GameObject:
@@ -24661,6 +24796,7 @@ GameObject:
   - component: {fileID: 1882061987}
   - component: {fileID: 1882061986}
   - component: {fileID: 1882061985}
+  - component: {fileID: 1882061990}
   m_Layer: 9
   m_Name: Goblin (5)
   m_TagString: Untagged
@@ -24734,7 +24870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6444b96915141d8b2ffd0f83a522d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 100
+  enemyLife: 25
   enemyCurrentLife: 0
   enemyPercentageLife: 0
   enemyHPBarConfig: {fileID: 1801901910}
@@ -24831,6 +24967,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1882061990
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882061983}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd19a6849ac8f49e088e8d09cac481d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1887780484
 GameObject:
   m_ObjectHideFlags: 0
@@ -27779,6 +27936,7 @@ GameObject:
   - component: {fileID: 2013978373}
   - component: {fileID: 2013978372}
   - component: {fileID: 2013978371}
+  - component: {fileID: 2013978376}
   m_Layer: 9
   m_Name: Goblin (4)
   m_TagString: Untagged
@@ -27852,7 +28010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6444b96915141d8b2ffd0f83a522d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLife: 100
+  enemyLife: 25
   enemyCurrentLife: 0
   enemyPercentageLife: 0
   enemyHPBarConfig: {fileID: 1295096773}
@@ -27949,6 +28107,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2013978376
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013978369}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd19a6849ac8f49e088e8d09cac481d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2022474478
 GameObject:
   m_ObjectHideFlags: 0
@@ -33444,7 +33623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2119405999}
   - component: {fileID: 2119406000}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Weapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}

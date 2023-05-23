@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     private GameController gameController;
     private PlayerController playerController;
     private SpriteRenderer enemySpriteRenderer;
+    private Animator enemyAnimator;
 
     [Header("Enemy life")]
     public float enemyLife;
@@ -36,7 +37,6 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         findControllers();
-        findEnemyLookingState();
         findEnemyComponents();
         findEnemyInitialStates();
     }
@@ -44,6 +44,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         checkPlayerPosition();
+        enemyAnimator.SetBool("Grounded", true);
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -56,21 +57,22 @@ public class EnemyController : MonoBehaviour
                 {
                     enemyHitState = EnemyHitState.IMMUNE; // Set to IMMUNE for block double attack when animation git is running
                     enemyHPBarConfig.SetActive(true); // Show enemy health bar
+                    enemyAnimator.SetTrigger("Hit"); // Show enemy hit animation
 
                     WeaponInformation weapon = collider.gameObject.GetComponent<WeaponInformation>();
 
                     int weaponDamageType = weapon.weaponDamageType;
-                    float weaponDamage = weapon.weaponDamage;
+                    float weaponDamage = Random.Range(weapon.minWeaponDamage, weapon.maxWeaponDamage);;
                     float weaponBonusDamage = weaponDamage + (weaponDamage * (enemyDamageAdjustments[weaponDamageType] / 100));
 
                     enemyCurrentLife -= Mathf.RoundToInt(weaponBonusDamage); // Reduce enemy life from damage received by player
                     setEnemyHealthBarPercent(); // Set enemy health bar current life
-                    killEnemyIfThereNoMoreLife(); // Destroy this game object if enemy life is 0
+                    killEnemyIfThereNoMoreLife(); // Kill enemy and destroy object
 
                     GameObject knockTemp = Instantiate(knockForcePrefab, knockPosition.position, knockPosition.localRotation);
                     Destroy(knockTemp, 0.03F); // Destroy knock object after 0.03s because engine physics is 0.02s
 
-                    StartCoroutine("enemyImmune"); // Change sprite renderer color to red to indicate that player hit damage
+                    StartCoroutine(enemyImmune()); // Change sprite renderer color to red to indicate that player hit damage
                 }
 
                 break;
@@ -91,6 +93,7 @@ public class EnemyController : MonoBehaviour
     void findEnemyComponents()
     {
         enemySpriteRenderer = GetComponent<SpriteRenderer>();
+        enemyAnimator = GetComponent<Animator>();
     }
 
     void findInitialEnemyStateColor()
@@ -104,14 +107,6 @@ public class EnemyController : MonoBehaviour
         enemyHPBarLife.localScale = new Vector3(1, 1, 1); // Set enemy bar to full HP
         enemyCurrentLife = enemyLife; // Set current enemy life
         enemyHPBarConfig.SetActive(false); // Hidden health bar
-    }
-
-    void findEnemyLookingState()
-    {
-        if (enemyLookingState == EnemyLookingState.RIGHT)
-        {
-            flipEnemy();
-        }
     }
 
     void checkPlayerPosition()
@@ -129,7 +124,6 @@ public class EnemyController : MonoBehaviour
         }
 
         flipEnemyKnock();
-        findKnockXPosition(knockXTemp);
     }
 
     void changeEnemyLookingState()
@@ -182,6 +176,7 @@ public class EnemyController : MonoBehaviour
         {
             knockXTemp = knockX;
         }
+        findKnockXPosition(knockXTemp);
     }
 
     void setEnemyHealthBarPercent()
@@ -195,19 +190,24 @@ public class EnemyController : MonoBehaviour
     {
         if (enemyCurrentLife <= 0)
         {
-            Destroy(gameObject);
+            enemyHitState = EnemyHitState.DIE; // Indicate death state
+            enemyAnimator.SetInteger("IdAnimation", 3); // Start enemy death animation
+
+            Destroy(gameObject, 1F); // Destroy enemy object from scene
         }
     }
 
     IEnumerator enemyImmune()
     {
-        // Change color to red for next 0.2F seconds
+        // Change color to red for next 0.4F seconds
         enemySpriteRenderer.color = enemyStatesColor[1];
         yield return new WaitForSeconds(0.4F);
 
         // Set default state to enemy to be able hit it again
         enemySpriteRenderer.color = enemyStatesColor[0];
-        enemyHitState = EnemyHitState.VULNERABLE;
+
+        // Change enemy states to VULNERABLE if it is not death
+        if (enemyHitState == EnemyHitState.IMMUNE) enemyHitState = EnemyHitState.VULNERABLE;
 
         // Set enemy health bar to hidden
         enemyHPBarConfig.SetActive(false);

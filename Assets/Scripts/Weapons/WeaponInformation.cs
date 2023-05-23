@@ -5,17 +5,10 @@ using UnityEngine;
 public class WeaponInformation : MonoBehaviour
 {
     
-    public float weaponDamage;
+    public float maxWeaponDamage;
+    public float minWeaponDamage;
+    
     public int weaponDamageType;
 
-    void Start()
-    {
-        
-    }
-
-
-    void Update()
-    {
-        
-    }
+    
 }

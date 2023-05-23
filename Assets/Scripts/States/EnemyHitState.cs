@@ -1,3 +1,3 @@
 public enum EnemyHitState {
-    VULNERABLE, IMMUNE
+    VULNERABLE, IMMUNE, DIE
 }
