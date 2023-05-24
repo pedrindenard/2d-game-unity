@@ -7,24 +7,31 @@ public class PlayerController : MonoBehaviour
 
     private Animator playerAnimator;
     private Rigidbody2D playerRigidBody;
+    private GameController gameController;
 
+    [Header("Player colliders")]
     public Collider2D playerStandardsCollider; // Player standards and crouch collider
     public Collider2D playerCrouchCollider; // Player crouch collide
 
+    [Header("Player interactions")]
     public Transform playerInteraction; // Player interaction
     public Transform groundCheck; // Object responsible for detecting if the character is on a surface
 
+    [Header("Player masks")]
     public LayerMask groundLayerMask; // Layer mask for the character that is colliding with the ground
     public LayerMask interactionLayerMask; // Layer mask for the character that is colliding with the interactive object
 
+    [Header("Player forces")]
     public float playerSpeed; // Character movement speed
     public float playerJumpForce; // Force applied to generate the character's jump
 
+    [Header("Player states")]
     public Vector3 playerDirection = Vector3.right; // Indicates which direction the character is facing
     public PlayerLookingState playerLookingState; // Indicates which direction the character is looking
     public GameObject playerObjectInteraction; // Indicates which object the character is interacting
     public GameObject[] playerWeapons; // Array of weapons
 
+    [Header("Player actions")]
     public bool playerAttacking; // Indicates whether the character is performing an attack
     public bool playerInGround; // Indicates whether the character is stepping on any surface
 
@@ -35,9 +42,12 @@ public class PlayerController : MonoBehaviour
 
     // Initial call from script
     void Start()
-    {
+    {   
+        gameController = FindObjectOfType(typeof(GameController)) as GameController;
+
         playerAnimator = GetComponent<Animator>();
         playerRigidBody = GetComponent<Rigidbody2D>();
+
         weaponVisible(false);
     }
 
@@ -67,66 +77,16 @@ public class PlayerController : MonoBehaviour
         interactionAnimation();
     }
 
-    // Called every time the player collides with another collider
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        switch (collision.gameObject.tag)
-        {
-            case "Trunk":
-
-                break;
-            case "Thorns":
-
-                break;
-            case "Plate":
-
-                break;
-            case "Lever":
-
-                break;
-            case "Door":
-
-                break;
-            case "Steps":
-
-                break;
-        }
-    }
-
-    // Called every time the player left from collides
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        switch (collision.gameObject.tag)
-        {
-            case "Trunk":
-
-                break;
-            case "Thorns":
-
-                break;
-            case "Plate":
-
-                break;
-            case "Lever":
-
-                break;
-            case "Door":
-
-                break;
-            case "Steps":
-
-                break;
-        }
-    }
-
+    // Called every time the player collides with trigger
     void OnTriggerEnter2D(Collider2D collider)
     {
-
-    }
-
-    void OnTriggerExit2D(Collider2D collider)
-    {
-
+        switch (collider.gameObject.tag)
+        {
+            case "Loots":
+                gameController.playerCoins =+ 1; // Add coin to player
+                Destroy(collider.gameObject); // Destroy coin
+                break;
+        }
     }
 
     void playerMovingStates()

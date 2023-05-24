@@ -5,15 +5,12 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
 
+    // Attack damage percentage
     public string[] weaponDamageType;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    // Attack effects
+    public GameObject[] weaponAttackEffects;
+    
+    // Player coins
+    public int playerCoins;
 }

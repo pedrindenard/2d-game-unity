@@ -11,6 +11,10 @@ public class EnemyController : MonoBehaviour
     private SpriteRenderer enemySpriteRenderer;
     private Animator enemyAnimator;
 
+    [Header("Enemy ground collider")]
+    public Transform groundCheck; // Object responsible for detecting if the character is on a surface
+    public LayerMask groundLayerMask; // Layer mask for the character that is colliding with the ground
+
     [Header("Enemy life")]
     public float enemyLife;
     public float enemyCurrentLife;
@@ -30,9 +34,11 @@ public class EnemyController : MonoBehaviour
     [Header("Enemy knock force")]
     public GameObject knockForcePrefab; // Repulsive force
     public Transform knockPosition; // Position force\
-
     private float knockXTemp; // Knock X position temp
     public float knockX; // Knock X position
+
+    [Header("Enemy loots drop")]
+    public GameObject[] loots;
 
     void Start()
     {
@@ -62,16 +68,15 @@ public class EnemyController : MonoBehaviour
                     WeaponInformation weapon = collider.gameObject.GetComponent<WeaponInformation>();
 
                     int weaponDamageType = weapon.weaponDamageType;
-                    float weaponDamage = Random.Range(weapon.minWeaponDamage, weapon.maxWeaponDamage);;
-                    float weaponBonusDamage = weaponDamage + (weaponDamage * (enemyDamageAdjustments[weaponDamageType] / 100));
 
-                    enemyCurrentLife -= Mathf.RoundToInt(weaponBonusDamage); // Reduce enemy life from damage received by player
+                    reduceEnemyLife(weaponDamageType, weapon); // Reduce enemy health by damage attack received by player
+
                     setEnemyHealthBarPercent(); // Set enemy health bar current life
                     killEnemyIfThereNoMoreLife(); // Kill enemy and destroy object
 
-                    GameObject knockTemp = Instantiate(knockForcePrefab, knockPosition.position, knockPosition.localRotation);
-                    Destroy(knockTemp, 0.03F); // Destroy knock object after 0.03s because engine physics is 0.02s
-
+                    showHitEffect(weaponDamageType); // Show hit effect by weapon type
+                    showKnockEffect(); // Show knock effect to pull enemy fall
+                    
                     StartCoroutine(enemyImmune()); // Change sprite renderer color to red to indicate that player hit damage
                 }
 
@@ -193,8 +198,44 @@ public class EnemyController : MonoBehaviour
             enemyHitState = EnemyHitState.DIE; // Indicate death state
             enemyAnimator.SetInteger("IdAnimation", 3); // Start enemy death animation
 
-            Destroy(gameObject, 1F); // Destroy enemy object from scene
+            StartCoroutine(enemyLoots()); // Start enemy death and loot animation
         }
+    }
+
+    void showHitEffect(int weaponDamageType)
+    {
+        GameObject hitEffect = gameController.weaponAttackEffects[weaponDamageType];
+        GameObject hitEffectTemp = Instantiate(hitEffect, transform.position, transform.localRotation);
+        Destroy(hitEffectTemp, 1F); // Destroy hit effects after 1s
+    }
+
+    void showKnockEffect()
+    {
+        GameObject knockTemp = Instantiate(knockForcePrefab, knockPosition.position, knockPosition.localRotation);
+        Destroy(knockTemp, 0.03F); // Destroy knock object after 0.03s
+    }
+    
+    void reduceEnemyLife(int weaponDamageType, WeaponInformation weapon)
+    {
+        float weaponDamage = Random.Range(weapon.minWeaponDamage, weapon.maxWeaponDamage);;
+        float weaponBonusDamage = weaponDamage + (weaponDamage * (enemyDamageAdjustments[weaponDamageType] / 100));
+
+        enemyCurrentLife -= Mathf.RoundToInt(weaponBonusDamage); // Reduce enemy life from damage received by player
+    }
+
+    IEnumerator enemyLoots()
+    {
+        yield return new WaitForSeconds(1F); // Wait for death animation to complete
+
+        foreach (var item in loots) // Scroll through the loot lis
+        {
+            GameObject loot = Instantiate(item, transform.position, transform.localRotation); // Show loots
+            Vector2 lootForce = new Vector2(Random.Range(-25, 25), Random.Range(75, 100)); // Loot force effects
+
+            loot.GetComponent<Rigidbody2D>().AddForce(lootForce); // Add force in loot
+        }
+
+        Destroy(gameObject); // Destroy enemy object
     }
 
     IEnumerator enemyImmune()

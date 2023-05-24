@@ -5,11 +5,14 @@ using UnityEngine;
 public class ChestInteraction : MonoBehaviour
 {
 
+    [Header("Controllers")]
     private GameController gameController;
 
+    [Header("Renders")]
     private SpriteRenderer spriteRenderer;
     public Sprite[] spriteAnimations;
 
+    public GameObject[] loots;
     private bool opened;
 
     void Start()
@@ -20,38 +23,39 @@ public class ChestInteraction : MonoBehaviour
 
     void interaction()
     {
-        openCloseChest();
-    }
-
-    void openCloseChest()
-    {
-        opened = !opened;
-
-        switch (opened)
-        {
-            case true:
-                spriteRenderer.sprite = spriteAnimations[1];
-                break;
-                
-            case false:
-                spriteRenderer.sprite = spriteAnimations[0];
-                break;
-        }   
+        openChest();
     }
 
     void openChest()
     {
         if (opened) return;
-        opened = true;
+        chestAnimation();
+        showLoots();
+    }
+
+    void chestAnimation()
+    {
         spriteRenderer.sprite = spriteAnimations[1];
+        opened = true;
     }
 
     void findGameController()
     {
-        if (gameController == null) gameController = FindObjectOfType(typeof(GameController)) as GameController;
+        gameController = FindObjectOfType(typeof(GameController)) as GameController;
     }
 
     void findSpriteRender() {
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void showLoots()
+    {
+        foreach (var item in loots) // Scroll through the loot lis
+        {
+            GameObject loot = Instantiate(item, transform.position, transform.localRotation); // Show loots
+            Vector2 lootForce = new Vector2(Random.Range(-25, 25), Random.Range(75, 100)); // Loot force effects
+
+            loot.GetComponent<Rigidbody2D>().AddForce(lootForce); // Add force in loot
+        }
     }
 }
