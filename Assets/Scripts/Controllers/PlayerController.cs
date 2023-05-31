@@ -83,8 +83,7 @@ public class PlayerController : MonoBehaviour
         switch (collider.gameObject.tag)
         {
             case "Loots":
-                gameController.playerCoins =+ 1; // Add coin to player
-                Destroy(collider.gameObject); // Destroy coin
+                collider.gameObject.SendMessage("gather", SendMessageOptions.DontRequireReceiver);
                 break;
         }
     }
