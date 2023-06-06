@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b704304ee360a4a4aa326f0d3f61a44f
+guid: db006a71559fd494c8588878672dfd19
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Treant_0
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +125,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80941033e07d34c0fbcbe359a3899648
-      internalID: 347797735
+      spriteID: 07b14020035454eb7a39c9fc9e50e54c
+      internalID: 2057896338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_1
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 240
@@ -146,20 +146,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 962ca6e178db846fab6c9e2295927a76
-      internalID: -1017886711
+      spriteID: 277f8d39e52d74874ba8b71ebd89d7b1
+      internalID: -1343282517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_2
+      name: Walk_1
       rect:
         serializedVersion: 2
         x: 480
@@ -167,20 +167,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dd86aa5caae642c58488dc5c1998823
-      internalID: -1613694706
+      spriteID: e2c8bc4351c5c4890b94e3ecba210bba
+      internalID: -350671040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_3
+      name: Walk_2
       rect:
         serializedVersion: 2
         x: 720
@@ -188,20 +188,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c7edaf8cfaec4317961549cdc43eeed
-      internalID: 199023476
+      spriteID: 2688b583868734d34b76d8dccb1beea3
+      internalID: 519756794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_4
+      name: Walk_3
       rect:
         serializedVersion: 2
         x: 960
@@ -209,20 +209,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da5cdab4b79624de8bfc7a19e95cb484
-      internalID: -100702700
+      spriteID: 025776af53863421eb7ecb1dcce12575
+      internalID: 1788582831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_5
+      name: Walk_4
       rect:
         serializedVersion: 2
         x: 1200
@@ -230,20 +230,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5faa2545942544c16a5458f3f29744bf
-      internalID: -103820343
+      spriteID: 11f913dff22b44cfea6c1b1a9bd6d9e8
+      internalID: -245943891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_6
+      name: Walk_5
       rect:
         serializedVersion: 2
         x: 1440
@@ -251,20 +251,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7e5ee7068ea543d4a05221574cf69c2
-      internalID: 865906954
+      spriteID: 995f63772a39a4e5283b2101f7bff701
+      internalID: -557018726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_7
+      name: Walk_6
       rect:
         serializedVersion: 2
         x: 1680
@@ -272,20 +272,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e136606250b1d42ef87eab5ebe6c4485
-      internalID: 61559907
+      spriteID: 847707b04c9cf44078fb390dce462075
+      internalID: 269121235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_8
+      name: Walk_7
       rect:
         serializedVersion: 2
         x: 0
@@ -293,20 +293,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d6e7a1697cae4906bd0029ac86158f7
-      internalID: 2045741856
+      spriteID: 527ea8dd9e20141c1bb6df2cc97bb2ce
+      internalID: -894157159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_9
+      name: Walk_8
       rect:
         serializedVersion: 2
         x: 240
@@ -314,20 +314,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f4c33d7a4c4e4de1999a7c79f0506b9
-      internalID: 146355262
+      spriteID: aae330da2ef9448eca6a5e14bf62a441
+      internalID: 377952775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_10
+      name: Jump_1
       rect:
         serializedVersion: 2
         x: 480
@@ -335,20 +335,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83653c5ecbb244a3ba320ab41a6d565a
-      internalID: 1468893074
+      spriteID: a994ed8dbffe7440bada1edc8374e878
+      internalID: -171681506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_11
+      name: Jump_2
       rect:
         serializedVersion: 2
         x: 720
@@ -356,20 +356,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9bd3f03c8154435096738117fe16821
-      internalID: 2022304720
+      spriteID: 88913e35de75e46b78c2e81d89360171
+      internalID: 735557654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_12
+      name: Jump_3
       rect:
         serializedVersion: 2
         x: 960
@@ -377,41 +377,41 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82e6a454d8bfd4ac29dc210b6210818c
-      internalID: -1194487279
+      spriteID: 3b397c8550a0949fc8169121499a97c9
+      internalID: 1251256378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_13
+      name: Jump_4
       rect:
         serializedVersion: 2
         x: 1200
-        y: 544
+        y: 546
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d64841505ed5a4e70a43b5c55193f102
-      internalID: -568939847
+      spriteID: 194687675ff084677a6edf1f1371e866
+      internalID: -455575214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_14
+      name: Crouch_1
       rect:
         serializedVersion: 2
         x: 1440
@@ -419,20 +419,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d3359a94cd444c4c94a503f81f332fe
-      internalID: -1371678476
+      spriteID: cfecc4c9a3c95401b899ed3c1b5e0572
+      internalID: 23235136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_15
+      name: Crouch_2
       rect:
         serializedVersion: 2
         x: 1680
@@ -440,20 +440,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba28c645d11414b328f3b45ec72ffdb6
-      internalID: 2006275604
+      spriteID: 018bd216608cf4a3dab1b2a9c33281a4
+      internalID: -1639044757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_16
+      name: Attack_1
       rect:
         serializedVersion: 2
         x: 0
@@ -461,20 +461,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d79efbb822d4c4fe2900a2beaa1032ba
-      internalID: 372204003
+      spriteID: 22a5daaf72fbc46349e7456ee90239c4
+      internalID: -241877737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_17
+      name: Attack_2
       rect:
         serializedVersion: 2
         x: 240
@@ -482,20 +482,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c9f8feafb66d41a3b98fd9491cf64f6
-      internalID: -206225297
+      spriteID: b3b1497c19ed545b3a28c08e091dac7e
+      internalID: -1328373215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_18
+      name: Attack_3
       rect:
         serializedVersion: 2
         x: 480
@@ -503,20 +503,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0865818aedb1f4361abadda9b7c1decb
-      internalID: -1868538176
+      spriteID: 41722c342f9ac40d5a113f86651630b7
+      internalID: -1120930359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_19
+      name: Hit_1
       rect:
         serializedVersion: 2
         x: 720
@@ -524,20 +524,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97b6aeceb1c9546bd9339bb75d744abb
-      internalID: -710573654
+      spriteID: 822a6fb18c194413ebef1c5097feb0b4
+      internalID: -106255329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_20
+      name: Hit_2
       rect:
         serializedVersion: 2
         x: 960
@@ -545,20 +545,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a3a852bfca5f4766a12b28c1070738b
-      internalID: -1002781659
+      spriteID: 4aa534f90343645e3b23a15e6a0dff47
+      internalID: 729246557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Treant_21
+      name: Die
       rect:
         serializedVersion: 2
         x: 1200
@@ -566,14 +566,14 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 904d3c8e29fb7437d9a35d0fdda0390c
-      internalID: 1024882483
+      spriteID: fa2ab4bccb1924c35bdfcaef914d5699
+      internalID: 1980075575
       vertices: []
       indices: 
       edges: []
@@ -589,28 +589,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Treant_0: 347797735
-      Treant_1: -1017886711
-      Treant_10: 1468893074
-      Treant_11: 2022304720
-      Treant_12: -1194487279
-      Treant_13: -568939847
-      Treant_14: -1371678476
-      Treant_15: 2006275604
-      Treant_16: 372204003
-      Treant_17: -206225297
-      Treant_18: -1868538176
-      Treant_19: -710573654
-      Treant_2: -1613694706
-      Treant_20: -1002781659
-      Treant_21: 1024882483
-      Treant_3: 199023476
-      Treant_4: -100702700
-      Treant_5: -103820343
-      Treant_6: 865906954
-      Treant_7: 61559907
-      Treant_8: 2045741856
-      Treant_9: 146355262
+      Attack_1: -241877737
+      Attack_2: -1328373215
+      Attack_3: -1120930359
+      Crouch_1: 23235136
+      Crouch_2: -1639044757
+      Die: 1980075575
+      Hit_1: -106255329
+      Hit_2: 729246557
+      Idle_1: 2057896338
+      Idle_2: -1343282517
+      Jump_1: -171681506
+      Jump_2: 735557654
+      Jump_3: 1251256378
+      Jump_4: -455575214
+      Walk_1: -350671040
+      Walk_2: 519756794
+      Walk_3: 1788582831
+      Walk_4: -245943891
+      Walk_5: -557018726
+      Walk_6: 269121235
+      Walk_7: -894157159
+      Walk_8: 377952775
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

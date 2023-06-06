@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnimator;
     private Rigidbody2D playerRigidBody;
     private GameController gameController;
+    private SpriteRenderer playerRenderer;
 
     [Header("Player colliders")]
     public Collider2D playerStandardsCollider; // Player standards and crouch collider
@@ -50,8 +51,10 @@ public class PlayerController : MonoBehaviour
     {   
         gameController = FindObjectOfType(typeof(GameController)) as GameController;
 
+        playerRenderer = GetComponent<SpriteRenderer>();
         playerAnimator = GetComponent<Animator>();
         playerRigidBody = GetComponent<Rigidbody2D>();
+
         playerCurrentHealth = playerMaxHealth;
 
         weaponVisible(false);
@@ -247,5 +250,15 @@ public class PlayerController : MonoBehaviour
     {
         weaponVisible(false);
         playerWeapons[id].SetActive(true);
+    }
+
+    public void setPlayerMaterial2D(Material material)
+    {
+        playerRenderer.material = material;
+
+        foreach (GameObject weapon in playerWeapons)
+        {
+            weapon.GetComponent<SpriteRenderer>().material = material;
+        }
     }
 }

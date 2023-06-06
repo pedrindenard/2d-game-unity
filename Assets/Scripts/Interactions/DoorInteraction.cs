@@ -5,12 +5,15 @@ using UnityEngine;
 public class DoorInteraction : MonoBehaviour
 {
 
+    [Header("Controllers")]
     public FadeInController fadeController;
     public PlayerController playerController;
 
+    [Header("Transforms")]
     public Transform playerTransform;
     public Transform playerDestination;
 
+    [Header("Materials light 2D")]
     public Material defaultMaterial;
     public Material lightMaterial;
 
@@ -46,16 +49,14 @@ public class DoorInteraction : MonoBehaviour
 
     void setPlayerLight()
     {
-        SpriteRenderer playerRender = playerController.gameObject.GetComponent<SpriteRenderer>(); // Get player renderer object
-
         switch (ambientLight)
         {
             case AmbientLightStates.NIGHT:
-                playerRender.material = lightMaterial; // Make the player sensitive to light
+                playerController.setPlayerMaterial2D(lightMaterial); // Make the player sensitive to light
                 break;
 
             case AmbientLightStates.LIGHT:
-                playerRender.material = defaultMaterial; // Make the player ignore light sensitive
+                playerController.setPlayerMaterial2D(defaultMaterial); // Make the player ignore light sensitive
                 break;
         }
     }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c76501aa4177343b1aa70102fcb4d10b
+guid: 45269a1502a514cf2841f862d1fb9db0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Scorpion_0
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 022af03acb7514b90ba0dd4fd3b519ad
-      internalID: 513389841
+      spriteID: 07b14020035454eb7a39c9fc9e50e54c
+      internalID: 2057896338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_1
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 250
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e16d9f84f1794036a8e5bb8f5ffc464
-      internalID: 1079822587
+      spriteID: 277f8d39e52d74874ba8b71ebd89d7b1
+      internalID: -1343282517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_2
+      name: Walk_1
       rect:
         serializedVersion: 2
         x: 500
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58653fa425ab04a7da53d66ca0a3c41b
-      internalID: 1421193752
+      spriteID: e2c8bc4351c5c4890b94e3ecba210bba
+      internalID: -350671040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_3
+      name: Walk_2
       rect:
         serializedVersion: 2
         x: 750
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4c46d0ad98274093be022df91e68051
-      internalID: -669683787
+      spriteID: 2688b583868734d34b76d8dccb1beea3
+      internalID: 519756794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_4
+      name: Walk_3
       rect:
         serializedVersion: 2
         x: 1000
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d86153302c42342d9b359d66a8e6c811
-      internalID: -82153004
+      spriteID: 025776af53863421eb7ecb1dcce12575
+      internalID: 1788582831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_5
+      name: Walk_4
       rect:
         serializedVersion: 2
         x: 1250
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e191e436a1504deeabb2fbfce41642a
-      internalID: -1574015097
+      spriteID: 11f913dff22b44cfea6c1b1a9bd6d9e8
+      internalID: -245943891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_6
+      name: Walk_5
       rect:
         serializedVersion: 2
         x: 1500
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1523cda8f39144e49b09d9ddb4e8c06
-      internalID: -1163654291
+      spriteID: 995f63772a39a4e5283b2101f7bff701
+      internalID: -557018726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_7
+      name: Walk_6
       rect:
         serializedVersion: 2
         x: 1750
@@ -278,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cc204da6bb9747dab31a37c84944b16
-      internalID: -1364033230
+      spriteID: 847707b04c9cf44078fb390dce462075
+      internalID: 269121235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_8
+      name: Walk_7
       rect:
         serializedVersion: 2
         x: 0
@@ -299,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bcbe3f94bd424b83b9ebb68468fd68a
-      internalID: -619275858
+      spriteID: 527ea8dd9e20141c1bb6df2cc97bb2ce
+      internalID: -894157159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_9
+      name: Walk_8
       rect:
         serializedVersion: 2
         x: 250
@@ -320,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc34b62cbb5f54ee89f07a71c8df0aee
-      internalID: 1954227648
+      spriteID: aae330da2ef9448eca6a5e14bf62a441
+      internalID: 377952775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_10
+      name: Jump_1
       rect:
         serializedVersion: 2
         x: 500
@@ -341,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8605672421f65413c85733ef50bcf718
-      internalID: 833177987
+      spriteID: a994ed8dbffe7440bada1edc8374e878
+      internalID: -171681506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_11
+      name: Jump_2
       rect:
         serializedVersion: 2
         x: 750
@@ -362,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d4345c62d9154b97b6107ec8da6a8f4
-      internalID: -1282129975
+      spriteID: 88913e35de75e46b78c2e81d89360171
+      internalID: 735557654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_12
+      name: Jump_3
       rect:
         serializedVersion: 2
         x: 1000
@@ -383,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2e492b1a5d354d298d99b1237c005cd
-      internalID: -398878072
+      spriteID: 3b397c8550a0949fc8169121499a97c9
+      internalID: 1251256378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_13
+      name: Jump_4
       rect:
         serializedVersion: 2
         x: 1250
@@ -404,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 093554669c8dd491f9a8f10b68b0f3ad
-      internalID: 219425940
+      spriteID: 194687675ff084677a6edf1f1371e866
+      internalID: -455575214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_14
+      name: Attack_1
       rect:
         serializedVersion: 2
         x: 1500
@@ -425,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c30a9905eebb4d53a693a836015af1d
-      internalID: -1289221286
+      spriteID: cfecc4c9a3c95401b899ed3c1b5e0572
+      internalID: 23235136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_15
+      name: Attack_2
       rect:
         serializedVersion: 2
         x: 1750
@@ -446,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e472716ea1294763ab37083cca072ff
-      internalID: -750110051
+      spriteID: 018bd216608cf4a3dab1b2a9c33281a4
+      internalID: -1639044757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_16
+      name: Attack_3
       rect:
         serializedVersion: 2
         x: 0
@@ -467,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3232752758fb64334b6e729cc8dcf623
-      internalID: -977418470
+      spriteID: 22a5daaf72fbc46349e7456ee90239c4
+      internalID: -241877737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_17
+      name: Hit_1
       rect:
         serializedVersion: 2
         x: 250
@@ -488,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8941e559425204d9fb342f589af48fee
-      internalID: -1980006626
+      spriteID: b3b1497c19ed545b3a28c08e091dac7e
+      internalID: -1328373215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_18
+      name: Hit_2
       rect:
         serializedVersion: 2
         x: 500
@@ -509,14 +509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a825e8e70be324d70b365b19f69e9d1b
-      internalID: -1948070883
+      spriteID: 41722c342f9ac40d5a113f86651630b7
+      internalID: -1120930359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Scorpion_19
+      name: Die
       rect:
         serializedVersion: 2
         x: 750
@@ -530,8 +530,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb0d982e73b25426c99f5f206d2ba05a
-      internalID: -1878497550
+      spriteID: 822a6fb18c194413ebef1c5097feb0b4
+      internalID: -106255329
       vertices: []
       indices: 
       edges: []
@@ -547,26 +547,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Scorpion_0: 513389841
-      Scorpion_1: 1079822587
-      Scorpion_10: 833177987
-      Scorpion_11: -1282129975
-      Scorpion_12: -398878072
-      Scorpion_13: 219425940
-      Scorpion_14: -1289221286
-      Scorpion_15: -750110051
-      Scorpion_16: -977418470
-      Scorpion_17: -1980006626
-      Scorpion_18: -1948070883
-      Scorpion_19: -1878497550
-      Scorpion_2: 1421193752
-      Scorpion_3: -669683787
-      Scorpion_4: -82153004
-      Scorpion_5: -1574015097
-      Scorpion_6: -1163654291
-      Scorpion_7: -1364033230
-      Scorpion_8: -619275858
-      Scorpion_9: 1954227648
+      Attack_1: -1639044757
+      Attack_2: 23235136
+      Attack_3: 23235136
+      Die: -106255329
+      Hit_1: -241877737
+      Hit_2: -1120930359
+      Idle_1: 2057896338
+      Idle_2: -1343282517
+      Jump_1: -171681506
+      Jump_2: 735557654
+      Jump_3: 1251256378
+      Jump_4: -455575214
+      Walk_1: -350671040
+      Walk_2: 519756794
+      Walk_3: 1788582831
+      Walk_4: -245943891
+      Walk_5: -557018726
+      Walk_6: 269121235
+      Walk_7: -894157159
+      Walk_8: 377952775
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

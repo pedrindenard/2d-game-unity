@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3b476b0eee2f541df956b92a6b24218f
+guid: 29d2c773647fa408bab77f9ea6777354
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Orc2_0
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f72d9e5d6ccb54ffda926d90d19ae75c
-      internalID: 1090186225
+      spriteID: f86bbb552ca904c478843f707a356b7d
+      internalID: 2057896338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_1
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 240
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed91812ef58114d3d8e93e7bd3a57610
-      internalID: 1631604373
+      spriteID: c3aa0fba0ad4f4379a275eb16540564c
+      internalID: -1343282517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_2
+      name: Walk_1
       rect:
         serializedVersion: 2
         x: 480
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e41bf440e95d2485ca4276c17d212fae
-      internalID: 312610883
+      spriteID: 2f8155099f6cb40aa956b9e91751e568
+      internalID: -350671040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_3
+      name: Walk_2
       rect:
         serializedVersion: 2
         x: 720
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b630577a986e2498d9aae9752972fa75
-      internalID: 1817890821
+      spriteID: 96df11d0052054cabbaa69b3f1403095
+      internalID: 519756794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_4
+      name: Walk_3
       rect:
         serializedVersion: 2
         x: 960
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e06f80b807dcf4f27a3370d2c024e027
-      internalID: 677317145
+      spriteID: c6edc93c3037843769670a5beac14e12
+      internalID: 1788582831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_5
+      name: Walk_4
       rect:
         serializedVersion: 2
         x: 1200
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fec35910f8af04722869e22082d0f505
-      internalID: -1293438578
+      spriteID: dc7d08398a2eb49b299b0f723daa4eb9
+      internalID: -245943891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_6
+      name: Walk_5
       rect:
         serializedVersion: 2
         x: 1440
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cf6a5050d55646c9af454532623ad87
-      internalID: -261127220
+      spriteID: e2c2ffab99694488584d7b3df6c4a4d2
+      internalID: -557018726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_7
+      name: Walk_6
       rect:
         serializedVersion: 2
         x: 1680
@@ -278,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59d4dd8bc66ec45bc95feb5c9d8c8bf0
-      internalID: -1681906216
+      spriteID: 060ad6e7f649b4eeb98b58f5815c73a2
+      internalID: 269121235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_8
+      name: Walk_7
       rect:
         serializedVersion: 2
         x: 0
@@ -299,18 +299,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 103709313420c4e558111ac48102b877
-      internalID: -2030495537
+      spriteID: e8265314bdb3342bc9c5d3e033ccbe46
+      internalID: -894157159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_9
+      name: Walk_8
       rect:
         serializedVersion: 2
         x: 240
-        y: 544
+        y: 547
         width: 240
         height: 240
       alignment: 0
@@ -320,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 339d76bf5ea7c49afa33ef0fd714c099
-      internalID: 344229980
+      spriteID: 95d9233bd349347b7aba7e8d185481f5
+      internalID: 377952775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_10
+      name: Jump_1
       rect:
         serializedVersion: 2
         x: 480
@@ -341,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c947e9cf2e1a345bfb9b7131d481d871
-      internalID: -1511303752
+      spriteID: f78e95ba62e014344a6bf5f208b19ba9
+      internalID: -171681506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_11
+      name: Jump_2
       rect:
         serializedVersion: 2
         x: 720
@@ -362,17 +362,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be2aeb0cabba541d5ad8bd842d60d55b
-      internalID: -532191562
+      spriteID: c00d4d7ffaceb409c81123aa0035f855
+      internalID: 735557654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_12
+      name: Jump_3
       rect:
         serializedVersion: 2
-        x: 960
+        x: 957
         y: 544
         width: 240
         height: 240
@@ -383,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf4a6cedb756d4fa592be22c14f2c585
-      internalID: -1560382841
+      spriteID: 2ce9b08d79a1447bebaad4bc68275b4b
+      internalID: 1251256378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_13
+      name: Jump_4
       rect:
         serializedVersion: 2
         x: 1200
@@ -404,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dce3cf46cb5f48e9b1bb95331839388
-      internalID: -1492952579
+      spriteID: 56c4636ebf1c84b259549ea1d4a1a542
+      internalID: -455575214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_14
+      name: Crouch_1
       rect:
         serializedVersion: 2
         x: 1440
@@ -425,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dc1e80d1a5334c5f8437a3e23594117
-      internalID: 1299391480
+      spriteID: a54949d9b614545c2a3620488a7fb549
+      internalID: 23235136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_15
+      name: Attack_1
       rect:
         serializedVersion: 2
         x: 1680
@@ -446,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c09731a70382b494bb812a6b1cb9ed1a
-      internalID: 170577946
+      spriteID: 776df77953b904e3fb903117c947a030
+      internalID: -241877737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_16
+      name: Attack_2
       rect:
         serializedVersion: 2
         x: 0
@@ -467,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52e7f5aa3ef7748ad8a26f64fd23de04
-      internalID: -1314195340
+      spriteID: 03bf5b9e6f525483e83732fe4c3a4d08
+      internalID: -1328373215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_17
+      name: Attack_3
       rect:
         serializedVersion: 2
         x: 240
@@ -488,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea05404f3cc4f44c887717991b9c3996
-      internalID: 732995956
+      spriteID: c3ef04338c32b44189a36b239dd05ec2
+      internalID: -1120930359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_18
+      name: Hit_1
       rect:
         serializedVersion: 2
         x: 480
@@ -509,14 +509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 996f777ad2e3b4e43b3c35fdd40cfe8c
-      internalID: -984432014
+      spriteID: fed2aa63000b4439787a64c2d2012583
+      internalID: -106255329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_19
+      name: Hit_2
       rect:
         serializedVersion: 2
         x: 720
@@ -530,14 +530,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 380bbdbef51904717b11c0afd294c8cc
-      internalID: 1369157966
+      spriteID: 9cdfb7e87ba6c4bd5b064b33ddae8332
+      internalID: 729246557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc2_20
+      name: Die
       rect:
         serializedVersion: 2
         x: 960
@@ -551,8 +551,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81bf566128014a3aa8bed3684b66b6f
-      internalID: 2113442753
+      spriteID: add0fd5a1717c4cd8ac1bfbb89b76c4d
+      internalID: 1980075575
       vertices: []
       indices: 
       edges: []
@@ -568,27 +568,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Orc2_0: 1090186225
-      Orc2_1: 1631604373
-      Orc2_10: -1511303752
-      Orc2_11: -532191562
-      Orc2_12: -1560382841
-      Orc2_13: -1492952579
-      Orc2_14: 1299391480
-      Orc2_15: 170577946
-      Orc2_16: -1314195340
-      Orc2_17: 732995956
-      Orc2_18: -984432014
-      Orc2_19: 1369157966
-      Orc2_2: 312610883
-      Orc2_20: 2113442753
-      Orc2_3: 1817890821
-      Orc2_4: 677317145
-      Orc2_5: -1293438578
-      Orc2_6: -261127220
-      Orc2_7: -1681906216
-      Orc2_8: -2030495537
-      Orc2_9: 344229980
+      Attack_1: -241877737
+      Attack_2: -1328373215
+      Attack_3: -1120930359
+      Crouch_1: 23235136
+      Die: 1980075575
+      Hit_1: -106255329
+      Hit_2: 729246557
+      Idle_1: 2057896338
+      Idle_2: -1343282517
+      Jump_1: -171681506
+      Jump_2: 735557654
+      Jump_3: 1251256378
+      Jump_4: -455575214
+      Walk_1: -350671040
+      Walk_2: 519756794
+      Walk_3: 1788582831
+      Walk_4: -245943891
+      Walk_5: -557018726
+      Walk_6: 269121235
+      Walk_7: -894157159
+      Walk_8: 377952775
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

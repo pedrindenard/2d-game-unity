@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d82b8e5c9828a4ae2ac6e822d94841da
+guid: e416e46ab0b174076bd5328ad7e27bbe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spider_0
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e57415d4de6464f5084ff50f5dc88be8
-      internalID: -160869322
+      spriteID: 07b14020035454eb7a39c9fc9e50e54c
+      internalID: 2057896338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_1
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 240
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dd8dee75de154a9c94b01101a0d5b95
-      internalID: 2004627030
+      spriteID: 277f8d39e52d74874ba8b71ebd89d7b1
+      internalID: -1343282517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_2
+      name: Walk_1
       rect:
         serializedVersion: 2
         x: 480
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75f8c4208fb714e1c81120eec73e12b8
-      internalID: 628105283
+      spriteID: e2c8bc4351c5c4890b94e3ecba210bba
+      internalID: -350671040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_3
+      name: Walk_2
       rect:
         serializedVersion: 2
         x: 720
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fd159377341f4cf1aea9fc75dbd1988
-      internalID: -12665519
+      spriteID: 2688b583868734d34b76d8dccb1beea3
+      internalID: 519756794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_4
+      name: Walk_3
       rect:
         serializedVersion: 2
         x: 960
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b47cb95362f74ccb8fe6e7ef070c64c
-      internalID: 1424569451
+      spriteID: 025776af53863421eb7ecb1dcce12575
+      internalID: 1788582831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_5
+      name: Walk_4
       rect:
         serializedVersion: 2
         x: 1200
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e29d8940862c7432982d41abe2daaf6c
-      internalID: -148853171
+      spriteID: 11f913dff22b44cfea6c1b1a9bd6d9e8
+      internalID: -245943891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_6
+      name: Walk_5
       rect:
         serializedVersion: 2
         x: 1440
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed41c7e99f2e74f83a4ac34a6157c0d8
-      internalID: 445330502
+      spriteID: 995f63772a39a4e5283b2101f7bff701
+      internalID: -557018726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_7
+      name: Walk_6
       rect:
         serializedVersion: 2
         x: 1680
@@ -278,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3ca7a6d77f4f43719a8631df28f0d9d
-      internalID: -1266548364
+      spriteID: 847707b04c9cf44078fb390dce462075
+      internalID: 269121235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_8
+      name: Walk_7
       rect:
         serializedVersion: 2
         x: 0
@@ -299,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 899c7892c358a4bada63345112b6bd7c
-      internalID: -1406308636
+      spriteID: 527ea8dd9e20141c1bb6df2cc97bb2ce
+      internalID: -894157159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_9
+      name: Walk_8
       rect:
         serializedVersion: 2
         x: 240
@@ -320,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29793fa6b484245d9893ef8a68db07b4
-      internalID: -1344890158
+      spriteID: aae330da2ef9448eca6a5e14bf62a441
+      internalID: 377952775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_10
+      name: Jump_1
       rect:
         serializedVersion: 2
         x: 480
@@ -341,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 777fac700b8aa470298cba4da9ee1b47
-      internalID: 1734403859
+      spriteID: a994ed8dbffe7440bada1edc8374e878
+      internalID: -171681506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_11
+      name: Jump_2
       rect:
         serializedVersion: 2
         x: 720
@@ -362,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d8b78c39fea34f2d9a8a765443ddeb7
-      internalID: -181545750
+      spriteID: 88913e35de75e46b78c2e81d89360171
+      internalID: 735557654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_12
+      name: Jump_3
       rect:
         serializedVersion: 2
         x: 960
@@ -383,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8584cceca52dc495cbaad8652e887f5e
-      internalID: -2058701396
+      spriteID: 3b397c8550a0949fc8169121499a97c9
+      internalID: 1251256378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_13
+      name: Jump_4
       rect:
         serializedVersion: 2
         x: 1200
@@ -404,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f59dcbe6a5c84bf2bdcddc8f4912e5b
-      internalID: -442139533
+      spriteID: 194687675ff084677a6edf1f1371e866
+      internalID: -455575214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_14
+      name: Attack_1
       rect:
         serializedVersion: 2
         x: 1440
@@ -425,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8858eb7cf6bc8432ea455f279c27a5da
-      internalID: -21526984
+      spriteID: cfecc4c9a3c95401b899ed3c1b5e0572
+      internalID: 23235136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_15
+      name: Attack_2
       rect:
         serializedVersion: 2
         x: 1680
@@ -446,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 049e86c23f718446e92c2793ee98bfb8
-      internalID: 1086387739
+      spriteID: 018bd216608cf4a3dab1b2a9c33281a4
+      internalID: -1639044757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_16
+      name: Attack_3
       rect:
         serializedVersion: 2
         x: 0
@@ -467,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d07335300174740b6a024ca127636502
-      internalID: -262920171
+      spriteID: 22a5daaf72fbc46349e7456ee90239c4
+      internalID: -241877737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_17
+      name: Hit_1
       rect:
         serializedVersion: 2
         x: 240
@@ -488,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62885e7061b7d4094985e172cad6270c
-      internalID: -1784764880
+      spriteID: b3b1497c19ed545b3a28c08e091dac7e
+      internalID: -1328373215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_18
+      name: Hit_2
       rect:
         serializedVersion: 2
         x: 480
@@ -509,14 +509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5de79b0b3fadf42c389fb1ed00dd99b0
-      internalID: -885084187
+      spriteID: 41722c342f9ac40d5a113f86651630b7
+      internalID: -1120930359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spider_19
+      name: Die
       rect:
         serializedVersion: 2
         x: 720
@@ -530,8 +530,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d808260a2918a42f18a3c7195c91774e
-      internalID: -515485661
+      spriteID: 822a6fb18c194413ebef1c5097feb0b4
+      internalID: -106255329
       vertices: []
       indices: 
       edges: []
@@ -547,26 +547,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spider_0: -160869322
-      Spider_1: 2004627030
-      Spider_10: 1734403859
-      Spider_11: -181545750
-      Spider_12: -2058701396
-      Spider_13: -442139533
-      Spider_14: -21526984
-      Spider_15: 1086387739
-      Spider_16: -262920171
-      Spider_17: -1784764880
-      Spider_18: -885084187
-      Spider_19: -515485661
-      Spider_2: 628105283
-      Spider_3: -12665519
-      Spider_4: 1424569451
-      Spider_5: -148853171
-      Spider_6: 445330502
-      Spider_7: -1266548364
-      Spider_8: -1406308636
-      Spider_9: -1344890158
+      Attack_1: 23235136
+      Attack_2: -1639044757
+      Attack_3: -241877737
+      Die: -106255329
+      Hit_1: -1328373215
+      Hit_2: -1120930359
+      Idle_1: 2057896338
+      Idle_2: -1343282517
+      Jump_1: -171681506
+      Jump_2: 735557654
+      Jump_3: 1251256378
+      Jump_4: -455575214
+      Walk_1: -350671040
+      Walk_2: 519756794
+      Walk_3: 1788582831
+      Walk_4: -245943891
+      Walk_5: -557018726
+      Walk_6: 269121235
+      Walk_7: -894157159
+      Walk_8: 377952775
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

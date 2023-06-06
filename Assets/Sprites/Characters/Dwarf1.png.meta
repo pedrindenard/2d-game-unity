@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2c9dc850125214ed1a251b2591b301ae
+guid: d0e2f36ef95094fbdb6086fa1c521056
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dwarf1_0
+      name: Idle_1
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +125,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d62f2d4a93d04bb2a2333b362009479
-      internalID: 344000559
+      spriteID: 07b14020035454eb7a39c9fc9e50e54c
+      internalID: 2057896338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_1
+      name: Idle_2
       rect:
         serializedVersion: 2
         x: 240
@@ -146,20 +146,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78cb30fa38f0b49edac8f02fd14d5baf
-      internalID: -66571316
+      spriteID: 277f8d39e52d74874ba8b71ebd89d7b1
+      internalID: -1343282517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_2
+      name: Walk_1
       rect:
         serializedVersion: 2
         x: 480
@@ -167,20 +167,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dae140b6a7bc74962ad6d552666b0864
-      internalID: -729756713
+      spriteID: e2c8bc4351c5c4890b94e3ecba210bba
+      internalID: -350671040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_3
+      name: Walk_2
       rect:
         serializedVersion: 2
         x: 720
@@ -188,20 +188,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa5853e2fbd8d415786cc60632e8dba3
-      internalID: 345586757
+      spriteID: 2688b583868734d34b76d8dccb1beea3
+      internalID: 519756794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_4
+      name: Walk_3
       rect:
         serializedVersion: 2
         x: 960
@@ -209,20 +209,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62ed2f627a18b484ea36eb3fa7472a35
-      internalID: 387849509
+      spriteID: 025776af53863421eb7ecb1dcce12575
+      internalID: 1788582831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_5
+      name: Walk_4
       rect:
         serializedVersion: 2
         x: 1200
@@ -230,20 +230,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 836d042b3ce9d430a9d8eefae6539fb2
-      internalID: -651703185
+      spriteID: 11f913dff22b44cfea6c1b1a9bd6d9e8
+      internalID: -245943891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_6
+      name: Walk_5
       rect:
         serializedVersion: 2
         x: 1440
@@ -251,20 +251,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c83fb0f7cdbc24f89922add5e7aa30fa
-      internalID: 1859872379
+      spriteID: 995f63772a39a4e5283b2101f7bff701
+      internalID: -557018726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_7
+      name: Walk_6
       rect:
         serializedVersion: 2
         x: 1680
@@ -272,20 +272,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09263c732e42448149135026aa1662f9
-      internalID: -1172389716
+      spriteID: 847707b04c9cf44078fb390dce462075
+      internalID: 269121235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_8
+      name: Walk_7
       rect:
         serializedVersion: 2
         x: 0
@@ -293,20 +293,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81b7f7dfbd94046ada3a08c0aca5629b
-      internalID: -168504472
+      spriteID: 527ea8dd9e20141c1bb6df2cc97bb2ce
+      internalID: -894157159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_9
+      name: Walk_8
       rect:
         serializedVersion: 2
         x: 240
@@ -314,20 +314,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20fd54fce50ca4dea8baac26942d2cac
-      internalID: 769595311
+      spriteID: aae330da2ef9448eca6a5e14bf62a441
+      internalID: 377952775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_10
+      name: Jump_1
       rect:
         serializedVersion: 2
         x: 480
@@ -335,20 +335,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 601f69968b3cf48e395d2dd30aa2f0f9
-      internalID: -1977093079
+      spriteID: a994ed8dbffe7440bada1edc8374e878
+      internalID: -171681506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_11
+      name: Jump_2
       rect:
         serializedVersion: 2
         x: 720
@@ -356,20 +356,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 164c617310f95466db03cb3f4d8155bc
-      internalID: 276597657
+      spriteID: 88913e35de75e46b78c2e81d89360171
+      internalID: 735557654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_12
+      name: Jump_3
       rect:
         serializedVersion: 2
         x: 960
@@ -377,41 +377,41 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c98f2d5e1e4c145d6ba72e52e93261a5
-      internalID: 1235022349
+      spriteID: 3b397c8550a0949fc8169121499a97c9
+      internalID: 1251256378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_13
+      name: Jump_4
       rect:
         serializedVersion: 2
         x: 1200
-        y: 544
+        y: 546
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 316bd92262f4b40e2a68a4be674bd445
-      internalID: 839485637
+      spriteID: 194687675ff084677a6edf1f1371e866
+      internalID: -455575214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_14
+      name: Crouch_1
       rect:
         serializedVersion: 2
         x: 1440
@@ -419,20 +419,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2da55d77d08e44c49a416134fc444aae
-      internalID: -1160550171
+      spriteID: cfecc4c9a3c95401b899ed3c1b5e0572
+      internalID: 23235136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_15
+      name: Crouch_2
       rect:
         serializedVersion: 2
         x: 1680
@@ -440,20 +440,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b7370b038624438bb413220f6fe32f0
-      internalID: 876848921
+      spriteID: 018bd216608cf4a3dab1b2a9c33281a4
+      internalID: -1639044757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_16
+      name: Attack_1
       rect:
         serializedVersion: 2
         x: 0
@@ -461,20 +461,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8dd47e3cafff45afb8f27698d21706c
-      internalID: -1311985395
+      spriteID: 22a5daaf72fbc46349e7456ee90239c4
+      internalID: -241877737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_17
+      name: Attack_2
       rect:
         serializedVersion: 2
         x: 240
@@ -482,20 +482,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdf7b9b6a68f640519c2e12da8d7bae2
-      internalID: 1846752366
+      spriteID: b3b1497c19ed545b3a28c08e091dac7e
+      internalID: -1328373215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_18
+      name: Attack_3
       rect:
         serializedVersion: 2
         x: 480
@@ -503,20 +503,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f936746f80c4428ca7cb43379273b85
-      internalID: -1197235117
+      spriteID: 41722c342f9ac40d5a113f86651630b7
+      internalID: -1120930359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_19
+      name: Hit_1
       rect:
         serializedVersion: 2
         x: 720
@@ -524,20 +524,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92c22d7eed4d142e2a3ba30ec7a5f184
-      internalID: 442227189
+      spriteID: 822a6fb18c194413ebef1c5097feb0b4
+      internalID: -106255329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_20
+      name: Hit_2
       rect:
         serializedVersion: 2
         x: 960
@@ -545,20 +545,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0facfd3116aa4775938fa4fe118c85a
-      internalID: -440746647
+      spriteID: 4aa534f90343645e3b23a15e6a0dff47
+      internalID: 729246557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dwarf1_21
+      name: Die
       rect:
         serializedVersion: 2
         x: 1200
@@ -566,14 +566,14 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bf33aaaab83f4b599248b9436dda346
-      internalID: 1263494570
+      spriteID: fa2ab4bccb1924c35bdfcaef914d5699
+      internalID: 1980075575
       vertices: []
       indices: 
       edges: []
@@ -589,28 +589,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dwarf1_0: 344000559
-      Dwarf1_1: -66571316
-      Dwarf1_10: -1977093079
-      Dwarf1_11: 276597657
-      Dwarf1_12: 1235022349
-      Dwarf1_13: 839485637
-      Dwarf1_14: -1160550171
-      Dwarf1_15: 876848921
-      Dwarf1_16: -1311985395
-      Dwarf1_17: 1846752366
-      Dwarf1_18: -1197235117
-      Dwarf1_19: 442227189
-      Dwarf1_2: -729756713
-      Dwarf1_20: -440746647
-      Dwarf1_21: 1263494570
-      Dwarf1_3: 345586757
-      Dwarf1_4: 387849509
-      Dwarf1_5: -651703185
-      Dwarf1_6: 1859872379
-      Dwarf1_7: -1172389716
-      Dwarf1_8: -168504472
-      Dwarf1_9: 769595311
+      Attack_1: -241877737
+      Attack_2: -1328373215
+      Attack_3: -1120930359
+      Crouch_1: 23235136
+      Crouch_2: -1639044757
+      Die: 1980075575
+      Hit_1: -106255329
+      Hit_2: 729246557
+      Idle_1: 2057896338
+      Idle_2: -1343282517
+      Jump_1: -171681506
+      Jump_2: 735557654
+      Jump_3: 1251256378
+      Jump_4: -455575214
+      Walk_1: -350671040
+      Walk_2: 519756794
+      Walk_3: 1788582831
+      Walk_4: -245943891
+      Walk_5: -557018726
+      Walk_6: 269121235
+      Walk_7: -894157159
+      Walk_8: 377952775
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
