@@ -1,3 +1,4 @@
-public enum EnemyHitState {
+public enum EnemyHitState
+{
     VULNERABLE, IMMUNE, DIE
 }

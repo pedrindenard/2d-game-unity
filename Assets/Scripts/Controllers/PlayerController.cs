@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public Collider2D playerCrouchCollider; // Player crouch collide
 
     [Header("Player interactions")]
+    public GameObject playerAlertInteraction; // Show interaction animation
     public Transform playerInteraction; // Player interaction
     public Transform groundCheck; // Object responsible for detecting if the character is on a surface
 
@@ -35,6 +36,10 @@ public class PlayerController : MonoBehaviour
     public bool playerAttacking; // Indicates whether the character is performing an attack
     public bool playerInGround; // Indicates whether the character is stepping on any surface
 
+    [Header("Player health")]
+    public int playerMaxHealth; // Max health player can have and current health
+    public int playerCurrentHealth; // Current player health
+
     private float horizontal;
     private float vertical;
 
@@ -47,6 +52,7 @@ public class PlayerController : MonoBehaviour
 
         playerAnimator = GetComponent<Animator>();
         playerRigidBody = GetComponent<Rigidbody2D>();
+        playerCurrentHealth = playerMaxHealth;
 
         weaponVisible(false);
     }
@@ -220,10 +226,12 @@ public class PlayerController : MonoBehaviour
         if (hit)
         {
             playerObjectInteraction = hit.collider.gameObject;
+            playerAlertInteraction.SetActive(true);
         }
         else
         {
             playerObjectInteraction = null;
+            playerAlertInteraction.SetActive(false);
         }
     }
 

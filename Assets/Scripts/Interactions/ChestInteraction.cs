@@ -5,11 +5,11 @@ using UnityEngine;
 public class ChestInteraction : MonoBehaviour
 {
 
-    [Header("Controllers")]
-    private GameController gameController;
+    [Header("Components")]
+    public SpriteRenderer spriteRenderer;
+    public Collider2D chestCollider;
 
     [Header("Renders")]
-    private SpriteRenderer spriteRenderer;
     public Sprite[] spriteAnimations;
 
     public GameObject[] loots;
@@ -17,8 +17,7 @@ public class ChestInteraction : MonoBehaviour
 
     void Start()
     {
-        findGameController();
-        findSpriteRender();
+        findComponentRender();
     }
 
     void interaction()
@@ -35,17 +34,14 @@ public class ChestInteraction : MonoBehaviour
 
     void chestAnimation()
     {
-        spriteRenderer.sprite = spriteAnimations[1];
-        opened = true;
+        spriteRenderer.sprite = spriteAnimations[1]; // Change sprite
+        chestCollider.enabled = false; // Disable collider
+        opened = true; // Change to opened state
     }
 
-    void findGameController()
-    {
-        gameController = FindObjectOfType(typeof(GameController)) as GameController;
-    }
-
-    void findSpriteRender() {
+    void findComponentRender() {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        chestCollider = GetComponent<Collider2D>();
     }
 
     void showLoots()
