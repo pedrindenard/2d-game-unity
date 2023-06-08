@@ -382,24 +382,32 @@ public class PlayerController : MonoBehaviour
     void spawnArrowObject()
     {
         GameObject arrowObj = Instantiate(arrow, spawnArrow.position, spawnArrow.localRotation);
-        Vector3 arrowTransform = arrowObj.transform.localScale;
-
-        arrowObj.transform.localScale = new Vector3(arrowTransform.x, arrowTransform.y, arrowTransform.z);
-        arrowObj.GetComponent<Rigidbody2D>().velocity = new Vector3(5 * playerDirection.x, 0);
-
-        Destroy(arrowObj, 1); // Destroy magic after 1s
+        changeTransform(arrowObj, 5);
     }
 
     // Called inside animation "Attack Staff"
     void spawnMagicObject()
     {
         GameObject magicObj = Instantiate(magic, spawnMagic.position, spawnMagic.localRotation);
-        Vector3 magicTransform = magicObj.transform.localScale;
+        changeTransform(magicObj, 2);
+    }
 
-        magicObj.transform.localScale = new Vector3(magicTransform.x, magicTransform.y, magicTransform.z);
-        magicObj.GetComponent<Rigidbody2D>().velocity = new Vector3(5 * playerDirection.x, 0);
+    void changeTransform(GameObject gameObject, int velocity)
+    {
+        Vector3 magicTransform = gameObject.transform.localScale;
 
-        Destroy(magicObj, 1); // Destroy magic after 1s
+        if (playerLookingState == PlayerLookingState.LEFT)
+        {
+            gameObject.transform.localScale = new Vector3(magicTransform.x * -1, magicTransform.y, magicTransform.z);
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(velocity * -1, 0);
+        }
+        else
+        {
+            gameObject.transform.localScale = new Vector3(magicTransform.x, magicTransform.y, magicTransform.z);
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(velocity, 0);
+        }
+
+        Destroy(gameObject, 1); // Destroy magic after 1s
     }
 
     void changeMaterial(GameObject[] weapons, Material material)

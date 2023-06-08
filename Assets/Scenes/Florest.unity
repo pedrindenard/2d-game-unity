@@ -13020,7 +13020,7 @@ MonoBehaviour:
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  enemyLife: 25
+  enemyLife: 250
   enemyCurrentLife: 0
   enemyPercentageLife: 0
   enemyHPBarConfig: {fileID: 1253918025}
@@ -14158,10 +14158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cba290247af4da2a802e6b21a85a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idPerson: 5
+  idPerson: 10
   idPersonCurrent: 0
   maxLifePerson: 10
-  idWeaponPerson: 3
+  idWeaponPerson: 6
   idWeaponPersonCurrent: 0
   personNames:
   - 
