@@ -198,6 +198,8 @@ public class EnemyController : MonoBehaviour
             enemyHitState = EnemyHitState.DIE; // Indicate death state
             enemyAnimator.SetInteger("IdAnimation", 3); // Start enemy death animation
 
+            gameObject.layer = LayerMask.NameToLayer("Ignore"); // Set layer to player to not interact with player
+
             StartCoroutine(enemyLoots()); // Start enemy death and loot animation
         }
     }

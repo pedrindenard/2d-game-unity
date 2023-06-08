@@ -9,6 +9,5 @@ public class WeaponInformation : MonoBehaviour
     public float minWeaponDamage;
     
     public int weaponDamageType;
-
     
 }
