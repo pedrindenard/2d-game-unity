@@ -37,6 +37,11 @@ public class SkinController : MonoBehaviour
             loadVariables();
         }
 
+        if (characterStates == CharacterStates.PLAYER)
+        {
+            gameController.validateWeapon();
+        }
+
         spriteRenderer.sprite = spriteSheet[spriteRenderer.sprite.name]; // Get sprite by sprite name and change it to actual
     }
 

@@ -77,6 +77,8 @@ public class PlayerController : MonoBehaviour
     // Called every 0.02 seconds (Player physics simulation)
     void FixedUpdate()
     {
+        if (gameController.currentStates != GameStates.PLAY) return; // If game are in pause, return function
+        
         playerVelocity();
         playerPhysics();
         playerInteract();
@@ -85,6 +87,8 @@ public class PlayerController : MonoBehaviour
     // Called every frame
     void Update()
     {
+        if (gameController.currentStates != GameStates.PLAY) return; // If game are in pause, return function
+
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
@@ -98,6 +102,8 @@ public class PlayerController : MonoBehaviour
         playerAnimations();
 
         interactionAnimation();
+
+        changeWeapon();
     }
 
     void LateUpdate()
@@ -423,6 +429,22 @@ public class PlayerController : MonoBehaviour
         foreach(GameObject gameObject in weapons)
         {
             gameObject.SetActive(visible);
+        }
+    }
+
+    void changeWeapon()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1) && !playerAttacking)
+        {
+            weaponSelected(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2) && !playerAttacking)
+        {
+            weaponSelected(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3) && !playerAttacking)
+        {
+            weaponSelected(2);
         }
     }
 }

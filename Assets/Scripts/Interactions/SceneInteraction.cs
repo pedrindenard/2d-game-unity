@@ -7,12 +7,14 @@ public class SceneInteraction : MonoBehaviour
 {
 
     public FadeInController fadeController;
+    public GameController gameController;
 
     public string sceneDestination;
 
     void Start()
     {
         fadeController = FindObjectOfType(typeof(FadeInController)) as FadeInController;
+        gameController = FindObjectOfType(typeof(GameController)) as GameController;
     }
 
     void interaction()
@@ -25,6 +27,11 @@ public class SceneInteraction : MonoBehaviour
         fadeController.fadeIn();
 
         yield return new WaitWhile(() => fadeController.imageTransition.color.a < 0.9F);
+
+        if (sceneDestination == "Menu")
+        {
+            Destroy(gameController.gameObject); // After finish game or back to menu, destroy game controller
+        }
 
         SceneManager.LoadScene(sceneDestination);
     }
