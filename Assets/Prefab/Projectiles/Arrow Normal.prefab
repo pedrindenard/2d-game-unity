@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3610569426566271004}
   - component: {fileID: 206658495110446033}
   m_Layer: 8
-  m_Name: Arrow
+  m_Name: Arrow Normal
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

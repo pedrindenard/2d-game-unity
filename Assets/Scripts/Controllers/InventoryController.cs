@@ -52,13 +52,7 @@ public class InventoryController : MonoBehaviour
             image.gameObject.SetActive(false);
         }
 
-        quantityHealth.text = "x0";
-        quantityMana.text = "x0";
-
-        quantityArrowA.text = "x0";
-        quantityArrowB.text = "x0";
-        quantityArrowC.text = "x0";
-
+        loadItemsQuantity();
         loadInventoryFromPlayerItems();
     }
 
@@ -82,6 +76,16 @@ public class InventoryController : MonoBehaviour
 
             id++; // Increment slot index
         }
+    }
+
+    void loadItemsQuantity()
+    {
+        quantityHealth.text = "x" + gameController.potionsQuantity[0]; // Health potions
+        quantityMana.text = "x" + gameController.potionsQuantity[1]; // Mana potions
+
+        quantityArrowA.text = "x" + gameController.arrowsQuantity[0]; // Normal arrow
+        quantityArrowB.text = "x" + gameController.arrowsQuantity[1]; // Freeze arrow
+        quantityArrowC.text = "x" + gameController.arrowsQuantity[2]; // Golden arrow
     }
 
     public void cleanOldInventory()

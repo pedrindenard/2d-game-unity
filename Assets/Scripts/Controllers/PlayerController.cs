@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
     public GameObject[] playerArrows; // Array of arrows
 
     [Header("PROJECTILES")]
-    public GameObject arrow;
     public GameObject magic;
     public Transform spawnArrow;
     public Transform spawnMagic;
@@ -47,10 +46,6 @@ public class PlayerController : MonoBehaviour
     [Header("ACTIONS")]
     public bool playerAttacking; // Indicates whether the character is performing an attack
     public bool playerInGround; // Indicates whether the character is stepping on any surface
-
-    [Header("HEALTH")]
-    public int playerMaxHealth; // Max health player can have and current health
-    public int playerCurrentHealth; // Current player health
 
     private float horizontal;
     private float vertical;
@@ -66,10 +61,6 @@ public class PlayerController : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         playerRigidBody = GetComponent<Rigidbody2D>();
 
-        playerMaxHealth = gameController.maxLifePerson;
-
-        playerCurrentHealth = playerMaxHealth;
-                
         weaponSelected(gameController.idWeaponPerson);
         weaponVisible(false);
     }
@@ -102,6 +93,7 @@ public class PlayerController : MonoBehaviour
         playerAnimations();
 
         interactionAnimation();
+        enableDisableArrowAnimation();
 
         changeWeapon();
     }
@@ -121,6 +113,10 @@ public class PlayerController : MonoBehaviour
         {
             case "Loots":
                 collider.gameObject.SendMessage("gather", SendMessageOptions.DontRequireReceiver);
+                break;
+
+            case "Enemy":
+                decreasePlayerHealth(); // Decrease player health
                 break;
         }
     }
@@ -387,13 +383,19 @@ public class PlayerController : MonoBehaviour
     // Called inside animation "Attack Bow"
     void spawnArrowObject()
     {
-        GameObject arrowObj = Instantiate(arrow, spawnArrow.position, spawnArrow.localRotation);
-        changeTransform(arrowObj, 5);
+        if (gameController.arrowsQuantity[gameController.idArrowEquipment] <= 0) return; // If actual arrow is less than 1, return immediately
+        gameController.arrowsQuantity[gameController.idArrowEquipment] -= 1; // Reduce player arrows
+
+        GameObject arrowObj = Instantiate(gameController.arrowsPrefab[gameController.idArrowEquipment], spawnArrow.position, spawnArrow.localRotation);
+        changeTransform(arrowObj, gameController.arrowsVelocity[gameController.idArrowEquipment]);
     }
 
     // Called inside animation "Attack Staff"
     void spawnMagicObject()
     {
+        if (gameController.playerCurrentMana <= 0) return; // If actual mana is less than necessary to spawn magic, return immediately
+        gameController.playerCurrentMana -= 1; // Reduce player mana
+
         GameObject magicObj = Instantiate(magic, spawnMagic.position, spawnMagic.localRotation);
         changeTransform(magicObj, 2);
     }
@@ -434,17 +436,34 @@ public class PlayerController : MonoBehaviour
 
     void changeWeapon()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) && !playerAttacking)
+        // if (Input.GetKeyDown(KeyCode.Alpha1) && !playerAttacking)
+        // {
+        //     weaponSelected(0);
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha2) && !playerAttacking)
+        // {
+        //     weaponSelected(1);
+        // }
+        // if (Input.GetKeyDown(KeyCode.Alpha3) && !playerAttacking)
+        // {
+        //     weaponSelected(2);
+        // }
+    }
+
+    void enableDisableArrowAnimation()
+    {
+        foreach (GameObject arrow in playerArrows)
         {
-            weaponSelected(0);
+            arrow.SetActive(gameController.arrowsQuantity[gameController.idArrowEquipment] > 0); // Active arrow animation
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2) && !playerAttacking)
-        {
-            weaponSelected(1);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3) && !playerAttacking)
-        {
-            weaponSelected(2);
-        }
+    }
+
+    void decreasePlayerHealth()
+    {
+        if (gameController.playerCurrentHealth <= 0) return; // Player is dead
+        
+        gameController.playerCurrentHealth -= 3; // Remove percentage player health
+        
+        if (gameController.playerCurrentHealth < 0) gameController.playerCurrentHealth = 0; // Set player health to 0 if less than 0       
     }
 }
