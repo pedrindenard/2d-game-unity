@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     public float playerJumpForce; // Force applied to generate the character's jump
 
     [Header("STATES")]
+    public AmbientLightStates ambientLightStates; // Indicates which ambient light player is currently
     public Vector3 playerDirection = Vector3.right; // Indicates which direction the character is facing
     public PlayerLookingState playerLookingState; // Indicates which direction the character is looking
     public GameObject playerObjectInteraction; // Indicates which object the character is interacting
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour
     [Header("ACTIONS")]
     public bool playerAttacking; // Indicates whether the character is performing an attack
     public bool playerInGround; // Indicates whether the character is stepping on any surface
+    public bool playerRecovery; // Indicates when player is recovering from last attack
 
     private float horizontal;
     private float vertical;
@@ -60,6 +62,8 @@ public class PlayerController : MonoBehaviour
         playerRenderer = GetComponent<SpriteRenderer>();
         playerAnimator = GetComponent<Animator>();
         playerRigidBody = GetComponent<Rigidbody2D>();
+
+        materialAmbient(ambientLightStates);
 
         weaponSelected(gameController.idWeaponPerson);
         weaponVisible(false);
@@ -94,8 +98,6 @@ public class PlayerController : MonoBehaviour
 
         interactionAnimation();
         enableDisableArrowAnimation();
-
-        changeWeapon();
     }
 
     void LateUpdate()
@@ -170,10 +172,11 @@ public class PlayerController : MonoBehaviour
 
     void attackAnimation()
     {
-        if (Input.GetButtonDown("Fire1") && vertical >= 0 && !playerAttacking && playerObjectInteraction == null)
+        if (Input.GetButtonDown("Fire1") && vertical >= 0 && !playerAttacking && playerObjectInteraction == null && !playerRecovery)
         {
             playerAnimator.SetTrigger("Attack");
         }
+
         // If player is running attack animation, stop moving
         if (playerAttacking && playerInGround)
         {
@@ -245,6 +248,8 @@ public class PlayerController : MonoBehaviour
                     playerStaffs[3].SetActive(false);
                     break;
             }
+            
+            StartCoroutine(recoveryTimeNextAttack()); // Start player recovery timer
         }
     }
 
@@ -434,22 +439,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void changeWeapon()
-    {
-        // if (Input.GetKeyDown(KeyCode.Alpha1) && !playerAttacking)
-        // {
-        //     weaponSelected(0);
-        // }
-        // if (Input.GetKeyDown(KeyCode.Alpha2) && !playerAttacking)
-        // {
-        //     weaponSelected(1);
-        // }
-        // if (Input.GetKeyDown(KeyCode.Alpha3) && !playerAttacking)
-        // {
-        //     weaponSelected(2);
-        // }
-    }
-
     void enableDisableArrowAnimation()
     {
         foreach (GameObject arrow in playerArrows)
@@ -465,5 +454,26 @@ public class PlayerController : MonoBehaviour
         gameController.playerCurrentHealth -= 3; // Remove percentage player health
         
         if (gameController.playerCurrentHealth < 0) gameController.playerCurrentHealth = 0; // Set player health to 0 if less than 0       
+    }
+
+    void materialAmbient(AmbientLightStates ambient)
+    {
+        switch (ambient)
+        {
+            case AmbientLightStates.LIGHT:
+                setPlayerMaterial2D(gameController.defaultMaterial);
+                break;
+
+            case AmbientLightStates.NIGHT:
+                setPlayerMaterial2D(gameController.lightMaterial);
+                break;
+        }
+    }
+
+    IEnumerator recoveryTimeNextAttack()
+    {
+        playerRecovery = true; // Start player recovery
+        yield return new WaitForSeconds(0.2F);
+        playerRecovery = false; // End player recovery after a certain amount of time
     }
 }

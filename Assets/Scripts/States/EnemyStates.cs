@@ -3,5 +3,6 @@ public enum EnemyStates
     STOPPED,
     ALERT,
     PATROL,
-    ATTACKING
+    ATTACKING,
+    FALLBACK
 }

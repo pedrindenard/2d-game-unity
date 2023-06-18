@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     [Header("Enemy controller")]
     private GameController gameController;
     private PlayerController playerController;
+    private EnemyIAController enemyIAController;
     private SpriteRenderer enemySpriteRenderer;
     private Animator enemyAnimator;
 
@@ -50,6 +51,8 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         checkPlayerPosition();
+
+        // Animator updates
         enemyAnimator.SetBool("Grounded", true);
     }
 
@@ -61,6 +64,8 @@ public class EnemyController : MonoBehaviour
 
                 if (enemyHitState == EnemyHitState.VULNERABLE)
                 {
+                    gameObject.SendMessage("onDamageReceived", SendMessageOptions.DontRequireReceiver); // Change IA states
+
                     enemyHitState = EnemyHitState.IMMUNE; // Set to IMMUNE for block double attack when animation git is running
                     enemyHPBarConfig.SetActive(true); // Show enemy health bar
                     enemyAnimator.SetTrigger("Hit"); // Show enemy hit animation
@@ -88,6 +93,7 @@ public class EnemyController : MonoBehaviour
     {
         gameController = FindObjectOfType(typeof(GameController)) as GameController;
         playerController = FindObjectOfType(typeof(PlayerController)) as PlayerController;
+        enemyIAController = FindObjectOfType(typeof(EnemyIAController)) as EnemyIAController;
     }
 
     void findKnockXPosition(float x)
@@ -138,9 +144,11 @@ public class EnemyController : MonoBehaviour
             case EnemyLookingState.LEFT:
                 enemyLookingState = EnemyLookingState.RIGHT;
                 break;
+
             case EnemyLookingState.RIGHT:
                 enemyLookingState = EnemyLookingState.LEFT;
                 break;
+
             default:
                 enemyLookingState = EnemyLookingState.LEFT;
                 break;

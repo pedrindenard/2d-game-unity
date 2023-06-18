@@ -8,14 +8,11 @@ public class DoorInteraction : MonoBehaviour
     [Header("Controllers")]
     public FadeInController fadeController;
     public PlayerController playerController;
+    public GameController gameController;
 
     [Header("Transforms")]
     public Transform playerTransform;
     public Transform playerDestination;
-
-    [Header("Materials light 2D")]
-    public Material defaultMaterial;
-    public Material lightMaterial;
 
     public AmbientLightStates ambientLight;
 
@@ -23,6 +20,7 @@ public class DoorInteraction : MonoBehaviour
     {
         fadeController = FindObjectOfType(typeof(FadeInController)) as FadeInController;
         playerController = FindObjectOfType(typeof(PlayerController)) as PlayerController;
+        gameController = FindObjectOfType(typeof(GameController)) as GameController;
     }
 
     void findPlayerTransform()
@@ -52,11 +50,11 @@ public class DoorInteraction : MonoBehaviour
         switch (ambientLight)
         {
             case AmbientLightStates.NIGHT:
-                playerController.setPlayerMaterial2D(lightMaterial); // Make the player sensitive to light
+                playerController.setPlayerMaterial2D(gameController.lightMaterial); // Make the player sensitive to light
                 break;
 
             case AmbientLightStates.LIGHT:
-                playerController.setPlayerMaterial2D(defaultMaterial); // Make the player ignore light sensitive
+                playerController.setPlayerMaterial2D(gameController.defaultMaterial); // Make the player ignore light sensitive
                 break;
         }
     }

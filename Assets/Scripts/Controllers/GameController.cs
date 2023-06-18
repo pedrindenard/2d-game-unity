@@ -81,6 +81,10 @@ public class GameController : MonoBehaviour
     public Button firstItemSelectPanelItems;
     public Button firstItemSelectPanelWeapon;
 
+    [Header("MATERIALS LIGHT 2D")]
+    public Material defaultMaterial;
+    public Material lightMaterial;
+
     void Start()
     {
         playerController = FindObjectOfType(typeof(PlayerController)) as PlayerController;
