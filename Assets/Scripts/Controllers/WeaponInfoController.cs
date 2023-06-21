@@ -39,14 +39,14 @@ public class WeaponInfoController : MonoBehaviour
 
         weaponId = itemController.idItem; // Set weapon id at script scope
 
-        string damageType = gameController.weaponDamageType[gameController.damageEffect[weaponId]];
+        string damageType = gameController.weaponEffectsNames[gameController.damageEffect[weaponId]];
 
         int damageMin = gameController.minDamage[weaponId]; // Min damage
         int damageMax = gameController.maxDamage[weaponId]; // Max damage
 
         imageItem.sprite = gameController.weaponImages[weaponId]; // Set weapon icon
 
-        damageItem.text = "Damage: " + damageMin + "-" + damageMax + " / " + damageType; // Set weapon description
+        damageItem.text = "Dano: " + damageMin + "-" + damageMax + " / " + damageType; // Set weapon description
         nameItem.text = gameController.weaponNames[weaponId]; // Set weapon name
 
         loadUpgrades();
@@ -77,7 +77,7 @@ public class WeaponInfoController : MonoBehaviour
     {
         improvement = gameController.weaponImprovements[weaponId];
 
-        upgradeButton.interactable = improvement < 5;
+        upgradeButton.interactable = gameController.playerCoins >= 200 && improvement < 5;
 
         foreach (GameObject upgrade in upgrades)
         {
@@ -92,6 +92,7 @@ public class WeaponInfoController : MonoBehaviour
 
     public void upgradeWeapon()
     {
+        gameController.playerCoins -= 200; // Decrease the player coins
         gameController.upgradeWeapon(weaponId); // Upgrade weapon
         loadUpgrades(); // Update screen
     }

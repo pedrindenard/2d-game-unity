@@ -2,5 +2,6 @@ public enum GameStates
 {
     PLAY,
     PAUSE,
-    INVENTORY
+    INVENTORY,
+    DEAD
 }

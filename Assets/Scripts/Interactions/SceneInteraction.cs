@@ -17,7 +17,7 @@ public class SceneInteraction : MonoBehaviour
         gameController = FindObjectOfType(typeof(GameController)) as GameController;
     }
 
-    void interaction()
+    public void interaction()
     {
         StartCoroutine(changeScene());
     }

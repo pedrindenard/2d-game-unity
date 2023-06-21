@@ -4,5 +4,6 @@ public enum EnemyStates
     ALERT,
     PATROL,
     ATTACKING,
-    FALLBACK
+    FALLBACK,
+    HIT
 }

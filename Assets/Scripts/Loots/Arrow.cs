@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public class Arrow : MonoBehaviour
 {
-
+    
     private GameController gameController;
 
-    public GameObject[] items;
+    public int arrowId;
+    public int arrowAmount;
+
     public bool gathered;
 
     void Start()
@@ -19,12 +21,11 @@ public class Weapon : MonoBehaviour
     {
         if (!gathered)
         {
-            gameController.gatherItem(items[gameController.personClassId[gameController.idPerson]]); // Gather item
+            gameController.arrowsQuantity[arrowId] += arrowAmount;
         }
-        
+
         gathered = true; // Item gathered
-
-        Destroy(gameObject); // After weapon being collected, destroy from scene
+        
+        Destroy(gameObject); // After coin being collected, destroy from scene
     }
-
 }

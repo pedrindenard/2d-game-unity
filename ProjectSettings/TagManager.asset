@@ -13,6 +13,7 @@ TagManager:
   - Weapon
   - Loots
   - Enemy
+  - Dead
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Loots
   - Ignore
   - PatrolLimit
-  - 
+  - Dead
   - 
   - 
   - 

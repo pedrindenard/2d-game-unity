@@ -89,14 +89,13 @@ public class EnemyIAController : MonoBehaviour
         updateAlertBalloon();
 
         // Animator updates
-        animator.SetFloat("IdWeaponClass", weaponClassId);
+        doAnimation(EnemyAnimationState.WEAPON);
     }
 
     void updateInteractivePatrolCollider()
     {
         if (currentEnemyState == EnemyStates.PATROL)
         {
-            Debug.DrawRay(transform.position, enemyDirection * patrolLimit, Color.red);
             RaycastHit2D collided = Physics2D.Raycast(transform.position, enemyDirection, patrolLimit, layerObstacles);
 
             if (collided)
@@ -110,7 +109,6 @@ public class EnemyIAController : MonoBehaviour
     {
         if (currentEnemyState == EnemyStates.FALLBACK)
         {
-            Debug.DrawRay(transform.position, enemyDirection * patrolLimit, Color.red);
             RaycastHit2D collided = Physics2D.Raycast(transform.position, enemyDirection, patrolLimit, layerObstacles);
 
             if (collided)
@@ -124,13 +122,11 @@ public class EnemyIAController : MonoBehaviour
     {
         if (currentEnemyState != EnemyStates.ATTACKING && currentEnemyState != EnemyStates.FALLBACK)
         {
-            Debug.DrawRay(transform.position, enemyDirection * playerDistance, Color.blue);
-            RaycastHit2D collided = Physics2D.Raycast(transform.position, enemyDirection, playerDistance, layerPersons);
-
-            if (collided)
-            {
-                enemyStates(EnemyStates.ALERT);
-            }
+            updateEnemyFallbackAlert(); // Create raycast player interaction
+        }
+        else if (currentEnemyState == EnemyStates.ATTACKING && animator.GetInteger("IdAnimation") == 0)
+        {
+            updateEnemyFallbackAlert(); // Create raycast player interaction
         }
     }
 
@@ -140,11 +136,11 @@ public class EnemyIAController : MonoBehaviour
 
         if (velocity == 0)
         {
-            animator.SetInteger("IdAnimation", 0);
+            doAnimation(EnemyAnimationState.IDLE);
         }
         else if (velocity != 0)
         {
-            animator.SetInteger("IdAnimation", 1);
+            doAnimation(EnemyAnimationState.WALK);
         }
     }
 
@@ -162,6 +158,29 @@ public class EnemyIAController : MonoBehaviour
             {
                 enemyStates(EnemyStates.STOPPED);
             }
+        }
+    }
+
+    void updateEnemyLookingAtAttack()
+    {
+        if (enemyLookingState == EnemyLookingState.RIGHT && playerController.playerLookingState == PlayerLookingState.LEFT)
+        {
+            flipEnemy(); // Flip enemy to look to player when attack
+        }
+        else if (enemyLookingState == EnemyLookingState.LEFT && playerController.playerLookingState == PlayerLookingState.RIGHT)
+        {
+            flipEnemy(); // Flip enemy to look to player when attack
+        }
+    }
+
+    void updateEnemyFallbackAlert()
+    {
+        RaycastHit2D collidedFront = Physics2D.Raycast(transform.position, enemyDirection, playerDistance, layerPersons);
+        RaycastHit2D collidedBack = Physics2D.Raycast(transform.position, enemyDirection * -1, playerDistance, layerPersons);
+
+        if (collidedFront || collidedBack)
+        {
+            enemyStates(EnemyStates.ALERT);
         }
     }
 
@@ -236,7 +255,9 @@ public class EnemyIAController : MonoBehaviour
 
                 velocity = 0; // Stop enemy movement
 
-                animator.SetTrigger("Attack"); // Attack player
+                updateEnemyLookingAtAttack(); // Enemy flipped to hit player
+
+                doAnimation(EnemyAnimationState.ATTACK);
 
                 break;
 
@@ -263,21 +284,17 @@ public class EnemyIAController : MonoBehaviour
             switch (weaponClassId)
             {
                 case 0: // Combat
-                    enemyWeapons[2].SetActive(false);
+                    changeVisibility(enemyWeapons, false);
                     break;
                 
                 case 1: // Bow
-                    enemyBows[2].SetActive(false);
+                    changeVisibility(enemyBows, false);
                     break;
                 
                 case 2: // Staff
-                    enemyStaffs[3].SetActive(false);
+                    changeVisibility(enemyStaffs, false);
                     break;
             }
-        }
-
-        if (isAttacking == 0)
-        {
             enemyStates(EnemyStates.FALLBACK);
         }
     }
@@ -285,22 +302,25 @@ public class EnemyIAController : MonoBehaviour
     // Using player animator, so func name need to be weaponControls
     void weaponControls(int id)
     {
-        switch (weaponClassId)
+        if (currentEnemyState != EnemyStates.HIT)
         {
-            case 0: // Combat
-                weaponVisible(false);
-                enemyWeapons[id].SetActive(true);
-                break;
-            
-            case 1: // Bow
-                weaponVisible(false);
-                enemyBows[id].SetActive(true);
-                break;
-            
-            case 2: // Staff
-                weaponVisible(false);
-                enemyStaffs[id].SetActive(true);
-                break;
+            switch (weaponClassId)
+            {
+                case 0: // Combat
+                    weaponVisible(false);
+                    enemyWeapons[id].SetActive(true);
+                    break;
+                
+                case 1: // Bow
+                    weaponVisible(false);
+                    enemyBows[id].SetActive(true);
+                    break;
+                
+                case 2: // Staff
+                    weaponVisible(false);
+                    enemyStaffs[id].SetActive(true);
+                    break;
+            }
         }
     }
 
@@ -415,7 +435,7 @@ public class EnemyIAController : MonoBehaviour
     {
         enemyAlert = true; // Set enemy alert for next seconds
 
-        enemyStates(EnemyStates.ALERT); // If receive any damage, stay alert
+        enemyStates(EnemyStates.HIT); // If receive any damage, stay alert
 
         StartCoroutine(damageReceiveAlert()); // Stay in alert for 3 seconds
     }
@@ -452,6 +472,40 @@ public class EnemyIAController : MonoBehaviour
         }
     }
 
+    void doAnimation(EnemyAnimationState animation)
+    {
+        if (animator.GetInteger("IdAnimation") != 3) // Enemy is not dead yet, do action
+        {
+            switch (animation)
+            {
+                case EnemyAnimationState.WEAPON:
+                    animator.SetFloat("IdWeaponClass", weaponClassId);
+                    break;
+                        
+                case EnemyAnimationState.IDLE:
+                    animator.SetInteger("IdAnimation", 0);
+                    break;
+
+                case EnemyAnimationState.WALK:
+                    animator.SetInteger("IdAnimation", 1);
+                    break;
+                    
+                case EnemyAnimationState.ATTACK:
+                    animator.SetTrigger("Attack");
+                    break;
+            }
+        }
+        else // Enemy dead
+        {
+            weaponVisible(false);
+        }
+    }
+
+    public void hiddenWeapons()
+    {
+        weaponVisible(false);
+    }
+
     IEnumerator idle()
     {
         yield return new WaitForSeconds(idleTime);
@@ -470,6 +524,9 @@ public class EnemyIAController : MonoBehaviour
 
     IEnumerator damageReceiveAlert()
     {
+        yield return new WaitForSeconds(3); // Wait for 3 seconds
+        enemyStates(EnemyStates.ALERT);
+
         yield return new WaitForSeconds(3); // Wait for 3 seconds
         enemyAlert = false; // Disable alert interaction
     }

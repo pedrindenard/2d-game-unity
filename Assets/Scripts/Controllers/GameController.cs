@@ -7,6 +7,7 @@ using TMPro;
 public class GameController : MonoBehaviour
 {
 
+    public SceneInteraction sceneInteraction;
     private InventoryController inventoryController;
     private PlayerController playerController;
 
@@ -58,6 +59,7 @@ public class GameController : MonoBehaviour
     public int[] weaponClasses; // Types of weapons, including combat (0), bows (1) and staffs (2)
     public int[] weaponImprovements; // Weapon improvements
 
+    public string[] weaponEffectsNames;
     public string[] weaponNames;
     public Sprite[] weaponImages;
 
@@ -75,11 +77,13 @@ public class GameController : MonoBehaviour
     public GameObject panelPause;
     public GameObject panelItems;
     public GameObject panelWeapon;
+    public GameObject panelDead;
 
     [Header("FIRST SELECT MENU ITEM")]
     public Button firstItemSelectPanelPause;
     public Button firstItemSelectPanelItems;
     public Button firstItemSelectPanelWeapon;
+    public Button firstItemSelectPanelDead;
 
     [Header("MATERIALS LIGHT 2D")]
     public Material defaultMaterial;
@@ -102,10 +106,19 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        if (currentStates != GameStates.DEAD)
         {
-            menuPause();
+            if (Input.GetButtonDown("Cancel"))
+            {
+                menuPause();
+            }
+            
+            if (Input.GetButtonDown("Inventory"))
+            {
+                menuItems();
+            }
         }
+
         updateCoins();
     }
 
@@ -183,55 +196,61 @@ public class GameController : MonoBehaviour
 
     public void menuPause()
     {
-        if (currentStates != GameStates.INVENTORY)
+        bool panelStates = !panelPause.activeSelf;
+
+        panelItems.SetActive(false); // Disable items menu
+        panelPause.SetActive(panelStates);
+
+        switch (panelStates)
         {
-            bool panelStates = !panelPause.activeSelf;
+            case true:
+                firstItemSelectPanelPause.Select(); // Select first button on panel
+                gameStates(GameStates.PAUSE); // Set game states to pause
+                break;
 
-            panelPause.SetActive(panelStates);
-
-            switch (panelStates)
-            {
-                case true:
-                    firstItemSelectPanelPause.Select(); // Select first button on panel
-                    gameStates(GameStates.PAUSE); // Set game states to pause
-                    break;
-
-                case false:
-                    gameStates(GameStates.PLAY); // Set game states to play
-                    break;
-            }
+            case false:
+                gameStates(GameStates.PLAY); // Set game states to play
+                break;
         }
     }
 
     public void menuItems()
     {
+        bool panelStates = !panelItems.activeSelf;
+
         panelPause.SetActive(false); // Disable pause menu
-        panelItems.SetActive(true); // Active items menu
+        panelItems.SetActive(panelStates); // Active items menu
 
-        firstItemSelectPanelItems.Select(); // Select first button on panel
-        inventoryController.loadInventory();
+        switch (panelStates)
+        {
+            case true:
+                firstItemSelectPanelItems.Select(); // Select first button on panel
+                gameStates(GameStates.INVENTORY); // Set game states to inventory
+                inventoryController.loadInventory(); // Load inventory
+                break;
 
-        gameStates(GameStates.INVENTORY); // Set game states
+            case false:
+                gameStates(GameStates.PLAY); // Set game states to play
+                break;
+        }        
     }
 
-    public void menuOptions()
+    public void menuDead()
     {
-        //panelPause.SetActive(false); // Disable pause menu
-        //panelOptions.SetActive(true); // Active options menu
+        closeAllPanels(); // Close all panels
 
-        //firstItemSelectPanelOptions.Select(); // Select first button on panel
+        panelDead.SetActive(true);
 
-        //gameStates(GameStates.INVENTORY); // Set game states
+        firstItemSelectPanelDead.Select(); // Select the first item in menu
     }
 
-    public void menuStatus()
+    public void exitGame()
     {
-        //panelPause.SetActive(false); // Disable pause menu
-        //panelStatus.SetActive(true); // Active status menu
+        closeAllPanels(); // Close all panels
 
-        //firstItemSelectPanelStatus.Select(); // Select first button on panel
-
-        //gameStates(GameStates.INVENTORY); // Set game states
+        gameStates(GameStates.PLAY); // Resume game
+        
+        sceneInteraction.interaction(); // Exit game
     }
 
     public void menuItemInfo()
@@ -242,10 +261,7 @@ public class GameController : MonoBehaviour
     public void closePanels()
     {
         panelPause.SetActive(true); // Active pause menu
-
-        //panelStatus.SetActive(false); // Disable menu status
         panelItems.SetActive(false); // Disable menu items
-        //panelOptions.SetActive(false);  // Disable menu options
 
         firstItemSelectPanelPause.Select(); // Select first button on panel
 
@@ -270,6 +286,7 @@ public class GameController : MonoBehaviour
         panelPause.SetActive(false); // Disable menu pause
         panelItems.SetActive(false); // Disable menu items
         panelWeapon.SetActive(false); // Disable menu weapon
+        panelDead.SetActive(false); // Disable menu dead
 
         gameStates(GameStates.PLAY); // Set game states to PLAY
     }
@@ -316,7 +333,7 @@ public class GameController : MonoBehaviour
         switch (idPotion)
         {
             case 0: // Health potion
-                playerCurrentHealth += 2; // Increase player health by 2
+                playerCurrentHealth += 5; // Increase player health by 2
 
                 if (playerCurrentHealth > playerMaxHealth)
                 {
@@ -325,7 +342,7 @@ public class GameController : MonoBehaviour
                 break;
 
             case 1: // Mana potion
-                playerCurrentMana += 4; // Increase player mana by 4
+                playerCurrentMana += 5; // Increase player mana by 4
 
                 if (playerCurrentMana > playerMaxMana)
                 {

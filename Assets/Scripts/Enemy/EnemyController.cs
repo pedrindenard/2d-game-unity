@@ -64,12 +64,12 @@ public class EnemyController : MonoBehaviour
 
                 if (enemyHitState == EnemyHitState.VULNERABLE)
                 {
-                    gameObject.SendMessage("onDamageReceived", SendMessageOptions.DontRequireReceiver); // Change IA states
+                    enemyAnimator.SetTrigger("Hit"); // Show enemy hit animation
+                    enemyIAController.onDamageReceived(); // Change IA states
 
                     enemyHitState = EnemyHitState.IMMUNE; // Set to IMMUNE for block double attack when animation git is running
                     enemyHPBarConfig.SetActive(true); // Show enemy health bar
-                    enemyAnimator.SetTrigger("Hit"); // Show enemy hit animation
-
+                    
                     WeaponInformation weapon = collider.gameObject.GetComponent<WeaponInformation>();
 
                     int weaponDamageType = weapon.weaponDamageType;
@@ -84,6 +84,15 @@ public class EnemyController : MonoBehaviour
                     
                     StartCoroutine(enemyImmune()); // Change sprite renderer color to red to indicate that player hit damage
                 }
+
+                break;
+            
+            case "Dead":
+
+                enemyHitState = EnemyHitState.DIE; // Indicate death state
+                enemyAnimator.SetInteger("IdAnimation", 3); // Start enemy death animation
+                
+                gameObject.layer = LayerMask.NameToLayer("Ignore"); // Set layer to player to not interact with player
 
                 break;
         }
@@ -205,7 +214,7 @@ public class EnemyController : MonoBehaviour
         {
             enemyHitState = EnemyHitState.DIE; // Indicate death state
             enemyAnimator.SetInteger("IdAnimation", 3); // Start enemy death animation
-
+            
             gameObject.layer = LayerMask.NameToLayer("Ignore"); // Set layer to player to not interact with player
 
             StartCoroutine(enemyLoots()); // Start enemy death and loot animation

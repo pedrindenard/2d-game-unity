@@ -24,7 +24,7 @@ public class SkinController : MonoBehaviour
         loadGameController(); // Load current controller
         loadVariables();
     }
-
+    
     void LateUpdate()
     {
         if (spriteSheetLoadedName != spriteSheetName) // If current sprit is != from selected sprite, change it

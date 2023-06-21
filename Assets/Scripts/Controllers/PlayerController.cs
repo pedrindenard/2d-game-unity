@@ -120,6 +120,10 @@ public class PlayerController : MonoBehaviour
             case "Enemy":
                 decreasePlayerHealth(); // Decrease player health
                 break;
+
+            case "Dead":
+                gameOver();
+                break;
         }
     }
 
@@ -453,7 +457,17 @@ public class PlayerController : MonoBehaviour
         
         gameController.playerCurrentHealth -= 3; // Remove percentage player health
         
-        if (gameController.playerCurrentHealth < 0) gameController.playerCurrentHealth = 0; // Set player health to 0 if less than 0       
+        if (gameController.playerCurrentHealth < 0)
+        {
+            gameOver();
+        }
+    }
+
+    void gameOver()
+    {
+        gameController.playerCurrentHealth = 0; // Set player health to 0 if less than 0
+        gameController.currentStates = GameStates.DEAD; // Game over
+        StartCoroutine(startDeadAnimation()); // Start dead animation
     }
 
     void materialAmbient(AmbientLightStates ambient)
@@ -475,5 +489,16 @@ public class PlayerController : MonoBehaviour
         playerRecovery = true; // Start player recovery
         yield return new WaitForSeconds(0.2F);
         playerRecovery = false; // End player recovery after a certain amount of time
+    }
+
+    IEnumerator startDeadAnimation()
+    {
+        playerAnimator.SetInteger("IdAnimation", 3);
+        yield return new WaitForSeconds(1F);
+
+        gameController.menuDead(); // Show game over menu
+        gameController.gameStates(GameStates.DEAD); // Set game states to game over
+
+        gameObject.GetComponent<Animator>().enabled = false; // Disable animation
     }
 }
