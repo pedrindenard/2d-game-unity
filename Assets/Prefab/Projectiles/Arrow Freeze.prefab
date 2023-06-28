@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 206658495110446033}
   m_Layer: 8
   m_Name: Arrow Freeze
-  m_TagString: Weapon
+  m_TagString: Hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

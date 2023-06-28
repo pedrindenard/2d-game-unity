@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
     public bool playerAttacking; // Indicates whether the character is performing an attack
     public bool playerInGround; // Indicates whether the character is stepping on any surface
     public bool playerRecovery; // Indicates when player is recovering from last attack
+    public bool playerDead; // Indicates when the character is dead
 
     private float horizontal;
     private float vertical;
@@ -117,8 +118,12 @@ public class PlayerController : MonoBehaviour
                 collider.gameObject.SendMessage("gather", SendMessageOptions.DontRequireReceiver);
                 break;
 
-            case "Enemy":
-                decreasePlayerHealth(); // Decrease player health
+            case "Weapon":
+                decreasePlayerHealth(3); // Decrease player health
+                break;
+
+            case "Claw":
+                decreasePlayerHealth(10); // Decrease player health
                 break;
 
             case "Dead":
@@ -451,11 +456,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void decreasePlayerHealth()
+    void decreasePlayerHealth(int life)
     {
         if (gameController.playerCurrentHealth <= 0) return; // Player is dead
         
-        gameController.playerCurrentHealth -= 3; // Remove percentage player health
+        gameController.playerCurrentHealth -= life; // Remove percentage player health
         
         if (gameController.playerCurrentHealth < 0)
         {
@@ -465,9 +470,15 @@ public class PlayerController : MonoBehaviour
 
     void gameOver()
     {
-        gameController.playerCurrentHealth = 0; // Set player health to 0 if less than 0
-        gameController.currentStates = GameStates.DEAD; // Game over
-        StartCoroutine(startDeadAnimation()); // Start dead animation
+        if (!playerDead) {
+
+            gameController.playerCurrentHealth = 0; // Set player health to 0 if less than 0
+            gameController.currentStates = GameStates.DEAD; // Game over
+
+            StartCoroutine(startDeadAnimation()); // Start dead animation
+
+            playerDead = true; // Player is dead
+        }
     }
 
     void materialAmbient(AmbientLightStates ambient)

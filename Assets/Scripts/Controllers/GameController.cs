@@ -78,12 +78,14 @@ public class GameController : MonoBehaviour
     public GameObject panelItems;
     public GameObject panelWeapon;
     public GameObject panelDead;
+    public GameObject panelGameOver;
 
     [Header("FIRST SELECT MENU ITEM")]
     public Button firstItemSelectPanelPause;
     public Button firstItemSelectPanelItems;
     public Button firstItemSelectPanelWeapon;
     public Button firstItemSelectPanelDead;
+    public Button firstItemSelectPanelGameOver;
 
     [Header("MATERIALS LIGHT 2D")]
     public Material defaultMaterial;
@@ -242,6 +244,15 @@ public class GameController : MonoBehaviour
         panelDead.SetActive(true);
 
         firstItemSelectPanelDead.Select(); // Select the first item in menu
+    }
+
+    public void menuGameOver()
+    {
+        closeAllPanels(); // Close all panels
+
+        panelGameOver.SetActive(true);
+
+        firstItemSelectPanelGameOver.Select(); // Select the first item in menu
     }
 
     public void exitGame()

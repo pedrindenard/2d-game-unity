@@ -14,6 +14,9 @@ TagManager:
   - Loots
   - Enemy
   - Dead
+  - Hit
+  - Boss
+  - Claw
   layers:
   - Default
   - TransparentFX
@@ -30,7 +33,7 @@ TagManager:
   - Ignore
   - PatrolLimit
   - Dead
-  - 
+  - Boss
   - 
   - 
   - 

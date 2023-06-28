@@ -3495,6 +3495,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 63723162863530331, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163053768904, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163379571392, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163466739478, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163925109982, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163932904380, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163937457983, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163983117363, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163985896049, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164315727679, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164673822027, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164809704950, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 63723164845273353, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: spriteSheetName
       value: Troll
@@ -3557,7 +3605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273361, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273367, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: m_Sprite
@@ -9710,6 +9758,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 63723162863530331, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163053768904, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163379571392, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163466739478, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163925109982, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163932904380, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163937457983, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163983117363, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163985896049, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164315727679, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164673822027, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164809704950, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 63723164845273353, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: spriteSheetName
       value: Skeleton1
@@ -9780,7 +9876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273361, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273367, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: m_Sprite
@@ -13252,6 +13348,7 @@ MonoBehaviour:
   playerAttacking: 0
   playerInGround: 0
   playerRecovery: 0
+  playerDead: 0
   idAnimation: 0
 --- !u!95 &824472452
 Animator:
@@ -16529,6 +16626,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 63723162863530331, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163053768904, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163379571392, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163466739478, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163925109982, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163932904380, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163937457983, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163983117363, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163985896049, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164315727679, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164673822027, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164809704950, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 63723164845273353, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: spriteSheetName
       value: Troll
@@ -16591,7 +16736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273361, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273367, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: m_Sprite
@@ -18969,7 +19114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeController: {fileID: 0}
   gameController: {fileID: 0}
-  sceneDestination: Menu
+  sceneDestination: Boss
 --- !u!61 &1151686550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25383,6 +25528,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 63723162863530331, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163053768904, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163379571392, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163466739478, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163925109982, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163932904380, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163937457983, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163983117363, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163985896049, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164315727679, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164673822027, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164809704950, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 63723164845273358, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -25441,7 +25634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273361, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
@@ -57299,6 +57492,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 63723162863530331, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163053768904, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163379571392, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163466739478, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163925109982, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163932904380, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163937457983, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163983117363, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163985896049, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164315727679, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164673822027, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164809704950, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 63723164845273353, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: spriteSheetName
       value: Skeleton1
@@ -57369,7 +57610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273361, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273367, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: m_Sprite
@@ -61152,6 +61393,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 63723162863530331, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163053768904, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163379571392, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163466739478, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163925109982, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163932904380, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163937457983, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163983117363, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163985896049, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164315727679, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164673822027, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164809704950, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 63723164845273353, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: spriteSheetName
       value: Monitaur
@@ -61214,7 +61503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273361, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273367, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: m_Sprite
@@ -63650,6 +63939,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 63723162863530331, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163053768904, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163379571392, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163466739478, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163925109982, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163932904380, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163937457983, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163983117363, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163985896049, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164315727679, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164673822027, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164809704950, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 63723164845273358, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -63708,7 +64045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273361, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
@@ -63808,6 +64145,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 63723162863530331, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163053768904, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163379571392, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163466739478, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163925109982, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163932904380, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163937457983, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163983117363, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723163985896049, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164315727679, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164673822027, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 63723164809704950, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 63723164845273358, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -63866,7 +64251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63723164845273361, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cf4f640ee52a45bba51190d6ba5117e, type: 3}
@@ -64123,9 +64508,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 6400943954853326272, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400943954854802306, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400943955061656877, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400943955104848463, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400943955108615884, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400943955186984652, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400943955712156677, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 6400943955747987682, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6400943955747987708, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
       propertyPath: m_Name
@@ -64183,6 +64596,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6400943955843931320, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400943956182163624, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400943956339904827, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400943956518780645, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400943956664650547, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c4b0f18de6714c079897a99cc9ffeab, type: 3}
 --- !u!1001 &7870809570788226049
@@ -64192,9 +64625,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 7915314367967616077, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915314368082045339, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915314368572981760, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915314368968897427, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 7915314369283981898, guid: 393204877523c4a0a920057f170aef13, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7915314369283981908, guid: 393204877523c4a0a920057f170aef13, type: 3}
       propertyPath: m_Name
@@ -64252,6 +64701,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7915314369311098541, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915314369448099344, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915314369624936296, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915314369631654186, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915314369641593063, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915314369646539876, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915314369701818245, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915314369828209764, guid: 393204877523c4a0a920057f170aef13, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 393204877523c4a0a920057f170aef13, type: 3}
 --- !u!1001 &8140313003656025916
@@ -64261,6 +64742,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 282997445}
     m_Modifications:
+    - target: {fileID: 8077857310737787809, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857310984330871, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857311320997946, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857311599473065, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857312196115498, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 8077857312224936046, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
       propertyPath: m_Name
       value: Minotaur IA
@@ -64319,7 +64820,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077857312224936048, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
       propertyPath: attackDistance
-      value: 0.5
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857312327812247, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857312340782527, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857312394557022, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857312398260957, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857312547705616, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857312549113170, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077857312752387678, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ec003c90dcb467b8f4ecfc038e2063, type: 3}

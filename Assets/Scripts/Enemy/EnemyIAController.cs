@@ -53,6 +53,7 @@ public class EnemyIAController : MonoBehaviour
     public float playerDistance; // Player vision limits for alert
     public float attackDistance; // Attack distance for player
     public float idleDistance; // Alert off distance
+    public float followDistance; // Player distance to start enemy follow it
 
     [Header("VELOCITY")]
     public float baseVelocity;
@@ -81,6 +82,9 @@ public class EnemyIAController : MonoBehaviour
 
     void Update()
     {
+        // Class weapon to define in enemy
+        animator.SetFloat("IdWeaponClass", gameController.weaponClasses[weaponClassId]);
+
         updateInteractivePatrolColliderWhenFallback();
         updateInteractivePatrolCollider();
         updateInteractivePlayerVision();
@@ -400,14 +404,14 @@ public class EnemyIAController : MonoBehaviour
     }
 
     // Called inside animation "Attack Bow"
-    void spawnArrowObject()
+    public void spawnArrowObject()
     {
         GameObject arrowObj = Instantiate(gameController.arrowsPrefab[gameController.idArrowEquipment], spawnArrow.position, spawnArrow.localRotation);
         changeTransform(arrowObj, gameController.arrowsVelocity[gameController.idArrowEquipment]);
     }
 
     // Called inside animation "Attack Staff"
-    void spawnMagicObject()
+    public void spawnMagicObject()
     {
         GameObject magicObj = Instantiate(magic, spawnMagic.position, spawnMagic.localRotation);
         changeTransform(magicObj, 2);
