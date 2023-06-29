@@ -52,7 +52,7 @@ The boss is designed around programmed routines to add variety and unpredictabil
 <img width="766" alt="image" src="https://github.com/pedrindenard/2d-game-unity/assets/71407814/7b7ffe56-bfbe-4b78-9675-a5fb4abf6b15">
 
 ## Document
-You can access the full documentation over here [GIT HUB](https://github.com/pedrindenard/2d-game-unity/blob/main/Desenvolvimento%20de%20jogo%202D%20com%20C%23%20e%20Unity.pdf).
+You can access the full documentation over here [PDF](https://github.com/pedrindenard/2d-game-unity/blob/main/Desenvolvimento%20de%20jogo%202D%20com%20C%23%20e%20Unity.pdf).
 
 ## Development and advisor
 Pedro Denardi Minuzzi / Gustavo Girardon dos Reis
